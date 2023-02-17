@@ -1,4 +1,4 @@
 Integrantes de equipo:
 -Uriel Salem Pérez Vásquez
 -Daniel Morales Sánchez
--Josue Carlos Guerrero Gutierrez
+-Josué Carlos Guerrero Gutierréz
