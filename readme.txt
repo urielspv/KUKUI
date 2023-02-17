@@ -3,3 +3,4 @@ Integrantes de equipo:
 -Daniel Morales Sánchez
 -Josué Carlos Guerrero Gutierréz
 -Lizzet Guadalupe Garcia Ruiz
+-Mariana Madariaga Rodríguez
