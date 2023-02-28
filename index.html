@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KUKUI</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-p0n/9fxENI9Dp7+icJYnRmEqn+hsA1F3LCq3l32PQJc/19oM9QTx5J5Y5F5Ew1Hpn4NztN+lSGz+jcrWbLl5GQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     
 </head>
 <body>
@@ -53,7 +53,7 @@
 
 
 <!-- Carrusel de imágenes -->
-<div class="container my-3">
+<div class="container-fluid my-3">
   <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -62,7 +62,7 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/img/MAR_6055.jpg" class="img-fluid" style="max-width: 100%; height: auto;" alt="Imagen 1">
+        <img src="/img/MAR_6055.jpg" class="img-fluid d-block w-100" style="max-width: 100%; height: auto;" alt="Imagen 1">
         <div class="carousel-caption d-none d-md-block">
           <button type="button" class="btn btn-light btn-block">Conócenos</button>
         </div>
@@ -133,39 +133,59 @@
     </div>
   </div>
 <!---Footer-->
-  <footer class="bg-light py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4  btn btn-outline-success">
+<footer class="bg-light py-5">
+  <div class="container text-right">
+    <div class="row">
+      <div class="col-sm-4">
+        <h4>Contactanos</h4>
+        <br>
+        <ul class="list-unstyled">
+          <h6> Dirección de la empresa</h6>
+          <li><i class="fas fa-map-marker-alt"></i>aqui #546</li>
+          <br>
+          <h6>Teléfono:</h6>
+          <li><i class="fas fa-phone-alt"></i> 123-456-7890</li>
+          <br>
+          <h6>Correo electrónico:</h6>
+          <li><i class="fas fa-envelope"></i> info@miempresa.com</li>
           
-          <h5>Contactanos</h5>
-          <ul class="list-unstyled">
-            <li><i class="fas fa-map-marker-alt"></i> Dirección de la empresa</li>
-            <li><i class="fas fa-phone-alt"></i> Teléfono: 123-456-7890</li>
-            <li><i class="fas fa-envelope"></i> Correo electrónico: info@miempresa.com</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <div class="text-center">
+          <img src="img/2.png" alt="Logo" style="max-height: 150px;">
+          <h6>Simply dummy text of the printing and typesetting industry</h6>
+          <ul class="list-inline mt-3">
+            <li class="list-inline-item"><a href="https://www.facebook.com/miempresa"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/miempresa"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/miempresa"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/miempresa"><i class="fab fa-linkedin"></i></a></li>
           </ul>
-        </div>
-        <div class="col-sm-4">
-          <div class="text-center">
-            <img src="http://isla.merida.gob.mx/serviciosinternet/Emprendedores/img/m/51.jpg" alt="Logo" style="max-height: 100px;">
-            <h6>Simply dummy text of the printing 
-
-                and typesetting industry</h6>
-          </div>
-        </div>
-        <div class="col-sm-4  btn btn-outline-success">
-          <h5>Utility Pages</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="link-success">Licences</a></li>
-            <li><a href="#" class="link-success">Style Guide</a></li>
-            <li><a href="#" class="link-success">Password Protected</a></li>
-            <li><a href="#" class="link-success">404 Not Found</a></li>
-          </ul>
-          
         </div>
       </div>
+      <div class="col-sm-3 text-left">
+        <h4>Utility Pages</h4>
+        <ul class="list-unstyled">
+          <br>
+          <li><a href="#" class="link-success">Licences</a></li>
+          <br>
+          <li><a href="#" class="link-success">Style Guide</a></li>
+          <br>
+          <li><a href="#" class="link-success">Password Protected</a></li>
+          <br>
+          <li><a href="#" class="link-success">404 Not Found</a></li>
+          <br>
+        
+        </ul>
+      </div>
     </div>
-  </footer>
+    <div class="row mt-4">
+      <div class="col-sm-12 text-center">
+        <p>&copy; 2023 Kukui Mid. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
   
 
      
