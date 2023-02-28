@@ -4,3 +4,19 @@
     transform: translateY(-10px);
     transition: all 0.5s ease;
   }
+
+/* Letras del Carrusel */
+.carouselH5 {
+  left: 0;
+  right: auto;
+  text-align: left;
+  font-size: 3rem;
+  display: flex;
+  height: 100%;
+  line-height: 400px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
