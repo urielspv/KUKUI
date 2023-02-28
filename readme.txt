@@ -4,6 +4,6 @@ Integrantes de equipo:
 -Daniel Morales Sánchez
 -Josué Carlos Guerrero Gutierréz
 -Lizzet Guadalupe Garcia Ruiz
+-Mariana Madariaga Rodríguez
 -Oscar Dusun Kang Navarro
--Mariana Madariaga
 -Hector Meneses
