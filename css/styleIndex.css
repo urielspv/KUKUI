@@ -1,6 +1,50 @@
-
+/* **********CARDS******************* */
 .card-hover:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transform: translateY(-10px);
     transition: all 0.5s ease;
   }
+.boton-verde{
+  background-color: #70A83b;
+  color:#FFFFFF;
+}
+/* Este boton es cafe  */
+.boton-cafe{
+    background-color:#4A2E10;
+    color:#FFFFFF;
+    font-size: 10px;
+    border-radius: 8px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+.texto-kukui{
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;    
+  font-weight: 700;
+}
+/* texto cafe */
+.texto-cafe{
+  text-align: left;
+  color: #4A2E10;
+}
+
+/* texto gris con linea para descuentos */
+/* .texto-gris{
+  text-decoration-line: line-through;
+  color: gray;
+  font-size:20px;
+  margin-right: 5px;
+} */
+/* Linea gris en la card */
+/* .linea{
+  border-bottom: rgb(218, 210, 210) solid 2px;
+  margin: 0 1rem 5px 1rem;
+} */
+/* icono de estrella */
+.fa-star{
+  font-size: 0.6rem;
+  color: white;
+}
