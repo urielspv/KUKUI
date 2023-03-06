@@ -35,19 +35,6 @@
   color: #4A2E10;
 }
 
-/* texto gris con linea para descuentos */
-/* .texto-gris{
-  text-decoration-line: line-through;
-  color: gray;
-  font-size:20px;
-  margin-right: 5px;
-} */
-/* Linea gris en la card */
-/* .linea{
-  border-bottom: rgb(218, 210, 210) solid 2px;
-  margin: 0 1rem 5px 1rem;
-} */
-/* icono de estrella */
 .fa-star{
   font-size: 0.6rem;
   color: white;
