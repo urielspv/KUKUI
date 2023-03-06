@@ -87,3 +87,54 @@
   color: #ffffff;
 }
 
+.card-hover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  transition: all 0.5s ease;
+}
+
+/* Boton Cafe con Hover Bco*/
+
+.botoncafe {
+  font-size: larger;
+  background-color: rgb(64, 57, 57);
+  position: left;
+  border-color: rgb(64, 57, 57);
+  color: white;
+  position: top;
+  position: left;
+  
+}
+
+/* Letras del Carrusel */
+.carouselH5 {
+  font-size: 3em;
+}
+
+.botoncafe:hover {
+  background-color: white;
+  color: rgb(64, 57, 57);
+  border-color: rgb(64, 57, 57);
+}
+
+/*Responsiveness - Carrusel*/ 
+
+@media screen and (min-width: 768px) {
+  .carouselH5 {
+    font-size: 4rem;
+  }
+
+  .carousel-description {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .carouselH5 {
+    font-size: 4em;
+  }
+
+  .carousel-description {
+    font-size: 3em;
+  }
+}
