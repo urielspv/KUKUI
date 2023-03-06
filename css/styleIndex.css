@@ -4,23 +4,10 @@
     transform: translateY(-10px);
     transition: all 0.5s ease;
   }
-  
-  /* Letras del Carrusel */
-.carouselH5 {
-  left: 0;
-  right: auto;
-  text-align: left;
-  font-size: 3rem;
-  display: flex;
-  height: 100%;
-  line-height: 400px;
+.boton-blanco{
+  background-color: #FFFFFF;
+  color:#4A2E10;
 }
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
-}
-
 .boton-verde{
   background-color: #70A83b;
   color:#FFFFFF;
@@ -48,23 +35,13 @@
   color: #4A2E10;
 }
 
-/* texto gris con linea para descuentos */
-/* .texto-gris{
-  text-decoration-line: line-through;
-  color: gray;
-  font-size:20px;
-  margin-right: 5px;
-} */
-/* Linea gris en la card */
-/* .linea{
-  border-bottom: rgb(218, 210, 210) solid 2px;
-  margin: 0 1rem 5px 1rem;
-} */
-/* icono de estrella */
 .fa-star{
   font-size: 0.6rem;
   color: white;
+
 }
+
+
   /* css Nav Bar */
 .nav-link {
   border-radius: 100px;
@@ -110,4 +87,3 @@
   color: #ffffff;
 }
 
-/*termina css Nav Bar*/
