@@ -291,8 +291,18 @@
   color: rgb(64, 57, 57);
   border-color: rgb(64, 57, 57);
 }
+@media (min-width: 720px) {
+  .loginPic {
+    height: 100%;
+    width: 100%;
+    
+  }
+}
 
-
+.imgTamañoLogin {
+  width: 100px;
+  height: 100px;
+}
 
 
 body{
