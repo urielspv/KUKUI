@@ -149,6 +149,7 @@
   }
 }
 
+
 .nav-font{
   font-size: 12px;
   color: #4A2E10;
@@ -164,3 +165,114 @@
     
   }
 }
+
+.card-hover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  transition: all 0.5s ease;
+}
+
+/* Boton Cafe con Hover Bco - OSCAR*/
+
+.botoncafe {
+  font-size: larger;
+  background-color: rgb(64, 57, 57);
+  position: left;
+  border-color: rgb(64, 57, 57);
+  color: white;
+  position: top;
+  position: left;
+  
+}
+.botoncafe:hover {
+  background-color: white;
+  color: rgb(64, 57, 57);
+  border-color: rgb(64, 57, 57);
+}
+
+/* Boton Verde con Hover Bco - OSCAR*/
+
+.botonverde {
+  font-size: larger;
+  background-color: #70A83B;
+  position: left;
+  border-color: #70A83B;
+  color: white;
+  position: top;
+  position: left;
+  
+}
+.botonverde:hover {
+  background-color: white;
+  color: #70A83B;
+  border-color: #70A83B;
+}
+
+/* Letras del Carrusel - OSCAR*/
+.carouselH5 {
+  font-size: 3em;
+}
+
+
+/*Responsiveness - Carrusel - OSCAR*/ 
+
+@media screen and (min-width: 768px) {
+  .carouselH5 {
+    font-size: 4rem;
+  }
+
+  .carousel-description {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .carouselH5 {
+    font-size: 4em;
+  }
+
+  .carousel-description {
+    font-size: 3em;
+  }
+}
+
+/*Login CARD - OSCAR*/
+
+.loginCard {
+    background: #F4F4F4;
+}
+
+/*Login Letters- OSCAR*/
+
+.loginLetter {
+  color: rgb(64, 57, 57);
+}
+
+.loginLetter:hover {
+  color: #70A83B;
+}
+
+/*Letters Brown- OSCAR*/
+
+.letrasCafe {
+  color: rgb(64, 57, 57);
+}
+
+/* Filtro */
+
+.botonFiltro {
+  background-color:  #F4F4F4;
+  color: rgb(64, 57, 57);
+  border-radius: 40px;
+}
+
+.botonFiltro:hover {
+  background-color:rgb(64, 57, 57);
+  color: #ffffff;
+}
+
+.botonFiltro:active{
+  background-color:rgb(64, 57, 57);
+  color: #ffffff;
+}
+
