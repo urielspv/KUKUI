@@ -43,55 +43,6 @@
 }
 
 
-
-  /* css Nav Bar */
-/* .nav-item {
-  border-radius: 100px;
-  border-color: #ffffff;
-  color: #4A2E10;
-  background-color: #ffffff;
-}
-
-.nav-item:hover {
-  background-color: white;
-  color: white;
-}
-.nav-link:hover {
-  background-color: white;
-  color: white;
-}
-.nav-item {
-  border-radius: 100px;
-  background-color: #ffffff;
-}
-
-#buttonIngresar {
-  background-color: #ffffff;
-  color: #4A2E10;
-  padding: 10px 20px;
-  border-radius: 100px;
-  margin: 5px;
-  transition: background-color 0.3s ease;
-}
-
-#buttonIngresar{
-  background-color: #4A2E10;
-  color: #ffffff;
-}
-#buttonIngresar:Hover{
-  background-color: #FFFFFF;
-  color: #ffffff;
-}
-#buttonCuenta {
-  background-color: #eaeaea;
-  color: #4A2E10;
-  padding: 10px 20px;
-  border-radius: 100px;
-  margin: 5px;
-  transition: background-color 0.3s ease;
-} */
-
-
 .card-hover:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transform: translateY(-10px);
@@ -242,45 +193,6 @@
   }
 }
 
-/*Login CARD - OSCAR*/
-
-.loginCard {
-    background: #F4F4F4;
-}
-
-/*Login Letters- OSCAR*/
-
-.loginLetter {
-  color: rgb(64, 57, 57);
-}
-
-.loginLetter:hover {
-  color: #70A83B;
-}
-
-/*Letters Brown- OSCAR*/
-
-.letrasCafe {
-  color: rgb(64, 57, 57);
-}
-
-/* Filtro */
-
-.botonFiltro {
-  background-color:  #F4F4F4;
-  color: rgb(64, 57, 57);
-  border-radius: 40px;
-}
-
-.botonFiltro:hover {
-  background-color:rgb(64, 57, 57);
-  color: #ffffff;
-}
-
-.botonFiltro:active{
-  background-color:rgb(64, 57, 57);
-  color: #ffffff;
-}
 
 .botonCafeCarrusel {
   font-size: larger;
