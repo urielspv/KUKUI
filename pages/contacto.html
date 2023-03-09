@@ -5,107 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KUKUI</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styleIndex.css">
     <link rel="shortcut icon" href="./img/LogoTransparente/3.png">
+    <link rel="stylesheet" href="../css/styleContacto.css">
     <title>Contacto</title>
-    <style>
-        .ubi-txt{
-            background-color: rgb(245, 242, 242);
-            border-top-left-radius: 100px;
-            border-bottom-left-radius: 100px;
-            
-
-        }
-        .ubi-map{
-            background-color: rgb(245, 242, 242);
-            border-top-right-radius: 100px;
-            border-bottom-right-radius: 100px;
-
-        }
-
-    </style>
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/8940c21cf5.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8940c21cf5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Barra de navegación -->
- <nav class="navbar navbar-expand-lg bg-light sticky-top mx-auto">
-    <div class="d-flex justify-content-center align-items-center">
-      <a class="navbar-brand" href="#">
-        <img src="http://isla.merida.gob.mx/serviciosinternet/Emprendedores/img/m/51.jpg" style="height: 100px;" alt="Logo">
-      </a>
+
+   <!-- BARRA NAV -->
+
+   <nav class=" py-4 border navbar navbar-sm navbar-expand-xl bg-white sticky-top">
+    <div class="  container-fluid d-flex justify-content-sm-center ">
+        <div class=" col-12 col-md-3 d-flex justify-content-center">
+            <a class="navbar-brand " href="#">
+                <img class=" img-fluid "
+                    src="http://isla.merida.gob.mx/serviciosinternet/Emprendedores/img/m/51.jpg"
+                    style="width: 100px;" alt="Logo">
+            </a>
+        </div>
+        <div class=" navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav  ">
+                <div class="d-flex justify-content-between ">
+                    <li class="nav-item btn flex-fill   col-2  ">
+                        <a class="nav-link nav-font facet_sidebar" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item btn  flex-fill   col-2">
+                        <a class="nav-link nav-font facet_sidebar" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item btn   flex-fill   col-2">
+                        <a class="nav-link btn nav-font facet_sidebar" href="./tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item btn  flex-fill  col-2">
+                        <a class="nav-link btn nav-font facet_sidebar" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item btn flex-fill  col-2">
+                        <a class="nav-link nav-font facet_sidebar" href="./equipo.html">Equipo</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <div class=" container-fluid d-flex justify-content-center">
+            <ul class=" container row d-flex justify-content-xl-end justify-content-md-center ">
+
+                <li id="buttonIngresar" class="nav-item  btn col-6 col-md-6 col-xxl-4">
+                    <a class="nav-link btn-light border-0 rounded-pill p-2"
+                        style="background-color: #4A2E10; color:white" href="#">Ingresar</a>
+                </li>
+                <li class="nav-item   btn col-6 col-md-6 col-xxl-4">
+                    <a id="buttonCuenta" class="nav-link  rounded-pill p-2" style="background-color:#eaeaea"
+                        href="#">Crear cuenta</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <button class="navbar-toggler btn btn-success" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon">KUI</span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active btn">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item btn">
-          <a class="nav-link" href="#">Nosotros</a>
-        </li>
-        <li class="nav-item btn">
-          <a class="nav-link" href="#">Tienda</a>
-        </li>
-        <li class="nav-item btn">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-        <li class="nav-item btn">
-          <a class="nav-link" href="#">Equipo</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a id="buttonIngresar" class="nav-link btn btn btn-light" href="#">Ingresar</a>
-        </li>
-        <li class="nav-item">
-          <a id="buttonCuenta" class="nav-link btn btn btn-light" href="#">Crear cuenta</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+
+</nav>
+
+<br>
+<br>
 
   <!-- Ubicaciones -->
+  <br><br><br>
+  <h3 style="text-align: center;">Nuestras ubicaciones</h3>
   <br><br><br>
 
   <div class="container">
     <!-- Ubicaion Mérida -->
-    <div class="row ">
+    <div class="row g-0  ">
         <div class="col-5 ubi-txt">
             <h5>KUKUI MERIDA</h5>
-            <p>contacto.mid@kukui.com</p>
-            <p>9993232321</p>
+             <p> <i class="fa-solid fa-envelope" style="color: #4A2E10;">  </i>  contacto.mid@kukui.com</p>
+            <p> <i class="fa-solid fa-phone" style="color: #4A2E10;"></i>  9993232321</p>
         </div>
         <div class="col-7 ">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42562.910535512194!2d-89.62581185538171!3d20.951653883489676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567163acb6dea9%3A0x3712fd883337fd5e!2zQ2VudHJvLCBNw6lyaWRhLCBZdWMu!5e0!3m2!1ses-419!2smx!4v1678253241857!5m2!1ses-419!2smx" class="ubi-map" width="600" height="200"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42562.910535512194!2d-89.62581185538171!3d20.951653883489676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567163acb6dea9%3A0x3712fd883337fd5e!2zQ2VudHJvLCBNw6lyaWRhLCBZdWMu!5e0!3m2!1ses-419!2smx!4v1678253241857!5m2!1ses-419!2smx" class="ubi-map" width="750" height="200"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </div>
     <br>
     <!-- Ubicacion Monterrey -->
-    <div class="row ">
+    <div class="row g-0">
         <div class="col-5 ubi-txt">
             <h5>KUKUI MONTERREY</h5>
-            <p>contacto.mty@kukui.com</p>
-            <p>33 1234 5678</p>
+            <p><i class="fa-solid fa-envelope" style="color: #4A2E10;">  </i>  contacto.mty@kukui.com</p>
+            <p><i class="fa-solid fa-phone" style="color: #4A2E10;"></i>  33 1234 5678</p>
         </div>
         <div class="col-7 ">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230186.953562225!2d-100.44318032036311!3d25.6490376398421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629531b437f8f5%3A0xa3d3d3ca6ac89894!2sMonterrey%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1678253367127!5m2!1ses-419!2smx" class="ubi-map" width="600" height="200"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230186.953562225!2d-100.44318032036311!3d25.6490376398421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629531b437f8f5%3A0xa3d3d3ca6ac89894!2sMonterrey%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1678253367127!5m2!1ses-419!2smx" class="ubi-map" width="750" height="200"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     <br>
     <!-- Ubicacion Guadalajara -->
-    <div class="row ">
+    <div class="row g-0">
         <div class="col-5 ubi-txt">
             <h5>KUKUI GUADALAJARA</h5>
-            <p>contacto.gdl@kukui.com</p>
-            <p>81 1234 5678</p>
+            <p><i class="fa-solid fa-envelope" style="color: #4A2E10;">  </i>  contacto.gdl@kukui.com</p>
+            <p><i class="fa-solid fa-phone" style="color: #4A2E10;"></i>  81 1234 5678</p>
             
         </div>
         <div class="col-7 ">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59726.31282457025!2d-103.37043261371696!3d20.67386861985773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b18cb52fd39b%3A0xd63d9302bf865750!2sGuadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1678253487670!5m2!1ses-419!2smx" class="ubi-map" width="600" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59726.31282457025!2d-103.37043261371696!3d20.67386861985773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b18cb52fd39b%3A0xd63d9302bf865750!2sGuadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1678253487670!5m2!1ses-419!2smx" class="ubi-map" width="750" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     
@@ -115,42 +119,129 @@
   </div>
   <!-- Formulario de contacto -->
 
+<br><br><br><br><br>
+<h3 style="text-align: center;">¿Preguntas?</h3>
+<br><br><br>
+<div class="container">
 
-  <div class="container ">
-    <h3>¿Preguntas?</h3>
-    <form action="">
-        <div class="row">
-            <div class="col-6">
-                <label for="nombre"> Nombre Completo*</label><br>
-                <input type="text" placeholder="Tu nombre completo">
-            </div>
-            <div class="col-6">
-                <label for="email"> Email*</label><br>
-                <input type="text" placeholder="ejemplo@gmail.com">
-            </div>
+<form>
+    <!-- Inicia primera fila -->
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+           <label class="form-label" for="inputNombre">Nombre*</label>
+          <input type="text" id="inputNombre" class="form-control input" />
+          
         </div>
-        <div class="row">
-            <div class="col-6">
-                <label for="empresa"> Empresa*</label><br>
-                <input type="text" placeholder="El nombre de tu compañia">
-            </div>
-            <div class="col-6">
-                <label for="titulo"> Titulo del Mensaje*</label><br>
-                <input type="text" placeholder="Cual es t duda o ¿en que te podemos ayudar?">
-            </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="inputEmail">Email*</label>
+          <input type="text" id="inputEmail" class="form-control input " />
         </div>
-        <div class="row">
-           
-                <label for="mensaje">Mensaje*</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+      
+    </div>
+    <!-- Inicia segunda fila de form -->
+
+    <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+             <label class="form-label" for="inputEmpresa">Empresa*</label>
+            <input type="text" id="inputEmpresa" class="form-control input" />
             
+          </div>
         </div>
-        <div class="row">
-            <input type="button" value="Enviar Mensaje">
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="inputTitulo">Titulo del Mensaje*</label>
+            <input type="text" id="inputTitulo" class="form-control input" />
+          </div>
+        </div>
+      </div>
+  
+   
+  
+    <!-- fila de mensaje -->
+    <div class="form-outline mb-4">
+        <label class="form-label" for="inputMensaje">Mensaje</label>
+      <textarea class="form-control input" id="inputMensaje" rows="4"></textarea>
+    </div>
+  
+    <!-- button -->
+    <button  type="submit" class="mb-4 btn-frm">Enviar</Em></button>
+  </form>
 
+
+</div>
+<br><br><br>
+
+
+<!-- Fin formulario de Contacto -->
+
+
+
+
+  <!---Footer-->
+  
+  <footer class="bg-light py-5">
+    <div class="container text-right">
+        <div class="row">
+            <div class="col-sm-4">
+                <h4>Contactanos</h4>
+                <br>
+                <ul class="list-unstyled">
+                    <h6> Dirección de la empresa</h6>
+                    <li><i class="fas fa-map-marker-alt"></i>aqui #546</li>
+                    <br>
+                    <h6>Teléfono:</h6>
+                    <li><i class="fas fa-phone-alt"></i> 123-456-7890</li>
+                    <br>
+                    <h6>Correo electrónico:</h6>
+                    <li><i class="fas fa-envelope"></i> info@miempresa.com</li>
+
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <div class="text-center">
+                    <img src="../img/LogoTransparente/2-CAFE.png" alt="Logo" style="max-height: 150px;">
+                    <h6>Simply dummy text of the printing and typesetting industry</h6>
+                    <ul class="list-inline mt-3">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/miempresa"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/miempresa"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/miempresa"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/miempresa"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3 text-left">
+                <h4>Utility Pages</h4>
+                <ul class="list-unstyled">
+                    <br>
+                    <li><a href="#" class="link-success">Licences</a></li>
+                    <br>
+                    <li><a href="#" class="link-success">Style Guide</a></li>
+                    <br>
+                    <li><a href="#" class="link-success">Password Protected</a></li>
+                    <br>
+                    <li><a href="#" class="link-success">404 Not Found</a></li>
+                    <br>
+
+                </ul>
+            </div>
         </div>
-    </form>
-  </div>
+        <div class="row mt-4">
+            <div class="col-sm-12 text-center">
+                <p>&copy; 2023 Kukui Mid. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 
 
