@@ -200,45 +200,6 @@
   }
 }
 
-/*Login CARD - OSCAR*/
-
-.loginCard {
-    background: #F4F4F4;
-}
-
-/*Login Letters- OSCAR*/
-
-.loginLetter {
-  color: rgb(64, 57, 57);
-}
-
-.loginLetter:hover {
-  color: #70A83B;
-}
-
-/*Letters Brown- OSCAR*/
-
-.letrasCafe {
-  color: rgb(64, 57, 57);
-}
-
-/* Filtro */
-
-.botonFiltro {
-  background-color:  #F4F4F4;
-  color: rgb(64, 57, 57);
-  border-radius: 40px;
-}
-
-.botonFiltro:hover {
-  background-color:rgb(64, 57, 57);
-  color: #ffffff;
-}
-
-.botonFiltro:active{
-  background-color:rgb(64, 57, 57);
-  color: #ffffff;
-}
 
 .botonCafeCarrusel {
   font-size: larger;
