@@ -1,4 +1,4 @@
-.container {
+/* .container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -10,7 +10,7 @@
     width: 1600px;
     box-sizing: border-box;
     border-radius: 10px;
-}
+} */
 
 /*.titulo1{
     display: inline-block;
@@ -18,7 +18,7 @@
     color: aqua;
 }
 */
-
+/* 
 .titulos{
     align-items: center;
     display: inline-block;
@@ -28,14 +28,14 @@
 }
 
 .foti {
-    width: 1320px; /* 1320px*/
+    width: 1320px;  1320px
     height: 10%;
     box-sizing: border-box;
     display: block;
     object-fit: contain;
 
-}
-.column {
+} */
+/* .column {
     flex: 1;
     margin-left: 20px;
     margin-right: 20px;
@@ -84,6 +84,97 @@ p {
 
 @media (max-width: 768px) {
     .column {
+        flex: 100%;
+    }
+} */
+
+/* COPIAAAAAAAAAAAAAAAA */
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: #f5f5f5;
+    padding-top: 20px; 
+    margin: 0 auto;
+    width: 1600px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/*.titulo1{
+    display: inline-block;
+    text-align: center;
+    color: aqua;
+}
+*/
+
+.titulos2{
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.foti2 {
+    width: 1320px; /* 1320px*/
+    height: 10%;
+    box-sizing: border-box;
+    display: block;
+    object-fit: contain;
+
+}
+.column2 {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+}
+
+input{
+
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+.btn2 .btn-secondary2 .btn-lg2 {
+    background-color:green;
+    margin-top: 60px;
+    margin-left: 35%;
+    display: block;
+    text-align: center;
+
+}
+
+.textobutton {
+    margin-top: 20px;
+    text-align: center;
+
+}
+hr {
+    margin-top: auto;
+}
+
+h1 {
+    align-self: auto;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.hiplogin {
+    color: green;
+}
+
+@media (max-width: 768px) {
+    .column2 {
         flex: 100%;
     }
 }
