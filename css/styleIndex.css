@@ -4,51 +4,61 @@
     transform: translateY(-10px);
     transition: all 0.5s ease;
   }
-.boton-blanco{
-  background-color: #FFFFFF;
-  color:#4A2E10;
-}
+
 .boton-verde{
   background-color: #70A83b;
   color:#FFFFFF;
+
+  font-family: 'Roboto', sans-serif;    
+  font-weight: 600;
+
+}
+.boton-verde:hover{
+  background-color: #458806;
+  color:#FFFFFF;
+
 }
 /* Este boton es cafe  */
 .boton-cafe{
     background-color:#4A2E10;
     color:#FFFFFF;
-    font-size: 10px;
-    border-radius: 8px;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: center;
-    padding: 0.5rem 1rem;
 }
-.texto-kukui{
+.boton-cafe:hover{
+  background-color:#eaeaea;
+    color:#70A83B;
+}
+
+.texto-card{
   font-size: 23px;
   font-family: 'Roboto', sans-serif;    
   font-weight: 700;
 }
 
-/* texto cafe */
-.texto-cafe{
-  text-align: left;
-  color: #4A2E10;
+.card-chica{
+  width: 12rem;
+  min-width: 7rem;
+  max-width: 8rem;
+  font-size: 12px;
 }
 
-.fa-star{
-  font-size: 0.6rem;
-  color: white;
-
+@media (min-width: 720px) {
+    .card-chica{
+      font-size: 20px;
+      min-width: 20rem;
+    }
 }
 
-
-.card-hover:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transform: translateY(-10px);
-  transition: all 0.5s ease;
+.botonsito{
+  font-size: 10px;
 }
-
+@media (min-width:720px ) {
+    .botonsito{
+      font-size: 20px;
+    }
+}
+.no-margin{
+  margin: 0;
+}
 /* Boton Cafe con Hover Bco*/
 
 .botoncafe {
@@ -95,6 +105,7 @@
   }
 }
 
+/* NAV BAR :0*/
 .botonesIngresar{
   background-color:#eaeaea;
   color: #4A2E10;
@@ -104,8 +115,6 @@
   background-color: #70A83B;
   color: #FFFFFF;
 }
-
-
 .nav-font{
   font-size: 12px;
   color: #4A2E10;
@@ -114,8 +123,6 @@
 .nav-font:hover{
   color:#70A83b;
 }
-
-
 @media (min-width: 720px) {
   .facet_sidebar {
     font-size: 25px;
