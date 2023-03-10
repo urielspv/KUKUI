@@ -1,13 +1,806 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda KUKUI</title>
-    
+    <title>Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-p0n/9fxENI9Dp7+icJYnRmEqn+hsA1F3LCq3l32PQJc/19oM9QTx5J5Y5F5Ew1Hpn4NztN+lSGz+jcrWbLl5GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styleIndex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/8940c21cf5.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8940c21cf5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
+    <!-- NAV BAR -->
+    <header>
+        <!-- place navbar here -->
+        <!-- Barra de navegación -->
+        <nav class=" py-4 border navbar navbar-sm navbar-expand-xl bg-white sticky-top">
+            <div class="  container-fluid d-flex justify-content-sm-center ">
+                <div class=" col-12 col-md-3 d-flex justify-content-center">
+                    <a class="navbar-brand " href="../index.html">
+                        <img class=" img-fluid "
+                            src="http://isla.merida.gob.mx/serviciosinternet/Emprendedores/img/m/51.jpg"
+                            style="width: 100px;" alt="Logo">
+                    </a>
+                </div>
+                <div class=" navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav  ">
+                        <div class="d-flex justify-content-between ">
+                            <li class="nav-item btn flex-fill   col-2  ">
+                                <a class="nav-link nav-font facet_sidebar" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item btn  flex-fill   col-2">
+                                <a class="nav-link nav-font facet_sidebar" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item btn   flex-fill   col-2">
+                                <a class="nav-link btn nav-font facet_sidebar" href="./tienda.html">Tienda</a>
+                            </li>
+                            <li class="nav-item btn  flex-fill  col-2">
+                                <a class="nav-link btn nav-font facet_sidebar" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item btn flex-fill  col-2">
+                                <a class="nav-link nav-font facet_sidebar" href="./equipo.html">Equipo</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class=" container-fluid d-flex justify-content-center">
+                    <ul class=" container row d-flex justify-content-xxl-end justify-content-md-center ">
+
+                        <li id="buttonIngresar" class="nav-item  btn col-6 col-md-6 col-xxl-4">
+                            <a class="nav-link btn-light border-0 botonesIngresar rounded-pill p-2"
+                                href="./login.html"><i class="fa-solid fs-5 me-2 fa-circle-user"></i> Ingresar</a>
+                        </li>
+                        <li class="nav-item  btn col-6 col-md-6 col-xxl-4">
+                            <a id="" class="nav-link botonesIngresar rounded-pill p-2" href="./signUp.html"><i
+                                    class="fa-solid fs-5 me-2 fa-circle-plus"></i> Crear cuenta </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BARRA DE BUSCAR -->
+
+    <div>
+        <div class="mt-4 d-flex justify-content-center">
+            <form class="d-flex" role="search">
+                <input class="form-control me-1" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn border" type="submit"><span class="material-symbols-outlined">
+                        <i class="fa-solid fa-magnifying-glass"></i></span></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FILTROS -->
+    <br>
+
+    <div>
+        <div class="row">
+            <div class="col-0 col-md-4"></div>
+
+            <div class="col-6 col-md-1"><button type="button" class="btn botonFiltro " data-bs-toggle="button"
+                    aria-pressed="false">Acondicionador Sólido</button></div>
+            <div class="col-6 col-md-1"><button type="button" class="btn botonFiltro" data-bs-toggle="button"
+                    aria-pressed="false">Acondicionador Sólido</button></div>
+            <div class="col-6 col-md-1"><button type="button" class="btn botonFiltro" data-bs-toggle="button"
+                    aria-pressed="false">Acondicionador Sólido</button></div>
+            <div class="col-6 col-md-1"><button type="button" class="btn botonFiltro" data-bs-toggle="button"
+                    aria-pressed="false">Acondicionador Sólido</button></div>
+
+            <div class="col-0 col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class=" col-0 col-md-2 "></div>
+
+            <div class="col-6 col-md-2"><button type="button" class="btn botonFiltro py-2" data-bs-toggle="button"
+                    aria-pressed="false">Acondicionador Sólido</button></div>
+            <div class="col-6 col-md-2"><button type="button" class="btn botonFiltro" data-bs-toggle="button"
+                    aria-pressed="false">Acondicionador Sólido</button></div>
+            <div class="col-6 col-md-2"><button type="button" class="btn botonFiltro" data-bs-toggle="button"
+                    aria-pressed="false">Acondicionador Sólido</button></div>
+            <div class="col-6 col-md-2"><button type="button" class="btn botonFiltro" data-bs-toggle="button"
+                    aria-pressed="false">Acondicionador Sólido</button></div>
+
+            <div class=" col-0 col-md-2 "></div>
+        </div>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div class="container ">
+        <div class="row">
+            <div class=" col">
+                <!-- Card 1-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                      rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+            </div>
+            <div class=" col">
+                <!-- Card 2-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                                  rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+            </div>
+            <div class=" col">
+                <!-- Card 3-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                                  rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+
+            </div>
+            <div class=" col">
+                <!-- Card 4-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                                  rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+
+            </div>
+            <div class=" col">
+                <!-- Card 5-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                                  rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+
+            </div>
+            <div class=" col">
+                <!-- Card 6-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                                  rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+
+            </div>
+            <div class=" col">
+                <!-- Card 7-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                                  rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+
+            </div>
+            <div class=" col">
+                <!-- Card 8-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                                  rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+
+            </div>
+            <div class=" col">
+                <!-- Card 9-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                                  rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+
+            </div>
+            <div class=" col">
+                <!-- Card 10-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                                  rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+
+            </div>
+            <div class=" col">
+                <!-- Card 11-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                                  rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+
+            </div>
+            <div class=" col">
+                <!-- Card 12-->
+                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
+                    style="width: 20rem;">
+                    <div><!-- burbuja de notificacion -->
+                        <span
+                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
+                        <!-- Boton cafe de arriba -->
+                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
+                    </div>
+                    <!-- IMG -->
+                    <div class="container">
+                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
+                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body pb-1">
+                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
+                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
+                                class="fa-regular fa-star"></i></button>
+                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
+                    </div>
+                    <!-- CARD FOOTER -->
+                    <div class="card-footer justify-content-lg-center texto-kukui 
+                                  rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
+                        <div class="row d-flex flex-fill justify-content-lg-around">
+                            <!-- Precio -->
+                            <div class=" container col-12 col-md-4 d-flex  ms-1">
+                                <span style="color:white; ">$120.00</span>
+                            </div>
+                            <div class="col-10 col-md-7 botonsito ">
+                                <!-- Boton Comprar -->
+                                <div class="">
+                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
+                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
+                                </div>
+                                <!-- Boton de añadir + -->
+                                <div id="BotonCompraCollapse" class="collapse">
+                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
+                                        href="" style="background-color: #ffffff;height: 50px;">
+                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
+                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
+                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--***************** Aqui Termina la CARD****************** -->
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!---Footer-->
+        <footer class="bg-light py-5">
+            <div class="container text-right">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h4>Contactanos</h4>
+                        <br>
+                        <ul class="list-unstyled">
+                            <h6> Dirección de la empresa</h6>
+                            <li><i class="fas fa-map-marker-alt"></i>aqui #546</li>
+                            <br>
+                            <h6>Teléfono:</h6>
+                            <li><i class="fas fa-phone-alt"></i> 123-456-7890</li>
+                            <br>
+                            <h6>Correo electrónico:</h6>
+                            <li><i class="fas fa-envelope"></i> info@miempresa.com</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-center">
+                            <img src="../img/LogoTransparente/2-CAFE.png" alt="Logo" style="max-height: 150px;">
+                            <h6>Simply dummy text of the printing and typesetting industry</h6>
+                            <ul class="list-inline mt-3">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/miempresa"><i
+                                            class="fab fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://twitter.com/miempresa"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/miempresa"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/company/miempresa"><i
+                                            class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 text-left">
+                        <h4>Utility Pages</h4>
+                        <ul class="list-unstyled">
+                            <br>
+                            <li><a href="#" class="link-success">Licences</a></li>
+                            <br>
+                            <li><a href="#" class="link-success">Style Guide</a></li>
+                            <br>
+                            <li><a href="#" class="link-success">Password Protected</a></li>
+                            <br>
+                            <li><a href="#" class="link-success">404 Not Found</a></li>
+                            <br>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm-12 text-center">
+                        <p>&copy; 2023 Kukui Mid. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+
 </body>
+
 </html>

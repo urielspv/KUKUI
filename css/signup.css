@@ -1,0 +1,94 @@
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center;
+    justify-content: center; */
+    height: 500px;
+    background-color: #f5f5f5;
+    padding-top: 20px; 
+    margin: 0 auto;
+    width: 1600px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.titulos2{
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.foti2{
+    width: 100%; /* 1320px*/
+    height: 10%;
+    box-sizing: border-box;
+    display: block;
+    object-fit: contain;
+
+}
+.column1{
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+    margin: auto;
+    
+}
+
+.column2{
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+    margin: auto;
+    
+}
+
+input{
+
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+.btn2 .btn-secondary2 .btn-lg2 {
+    background-color:green;
+    margin-top: 60px;
+    margin-left: 40%;
+    display: block;
+    text-align: center;
+
+}
+
+.button2{
+    margin-left: 50px;
+}
+
+.textobutton {
+    margin-top: 20px;
+    text-align: center;
+
+}
+.hrform {
+    margin-top: auto;
+}
+
+h1 {
+    align-self: auto;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.hiplogin {
+    color: green;
+}
+
+@media (max-width: 768px) {
+    .column2 {
+        flex: 100%;
+    }
+}
