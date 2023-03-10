@@ -18,6 +18,8 @@
 
         <link rel="stylesheet" href="../css/navBar.css">
         <link rel="stylesheet" href="../css/stylesLogin.css">
+        <script src="../js/validacionCorreo.js"></script>
+        
         
 </head>
 
@@ -115,15 +117,17 @@
                         <div>
                             
                         </div>
-                        <form>
+                        <form novalidate>
                             <h4 class="letrasCafe">Nos alegra verte de nuevo.</h4>
                             <p class="letrasCafe"> Por favor, ingresa tus datos.</p>
                             <br>
                             <div class="row mb-3">
                                 <label for="inputEmail3" class="col-sm-12 col-form-label fs-5 letrasCafe">Email</label>
+                                
                                 <div class="col-sm-12">
-                                    <input class="form-control" type="text" placeholder="ejemplo@gmail.com"
+                                    <input id ="mail" class="form-control" type="email" placeholder="ejemplo@gmail.com"
                                         aria-label="default input example">
+                                        <span class="error " aria-live="polite"></span>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -140,13 +144,13 @@
                                         <label class="form-check-label letrasCafe" for="gridCheck1">Recordarme</label>
                                     </div>
                                     <div>
-                                        <button type="button" class="col-sm-12 btn btn-link loginLetter">Olvidé mi
+                                        <button  type="button" class="col-sm-12 btn btn-link loginLetter">Olvidé mi
                                             Contraseña</button>
                                     </div>
                                 </div>
                             </div>
                             <br>
-                            <button type="submit" class="btn botonverde col-sm-12">Login</button>
+                            <button onclick="validar()" type="submit" class="btn botonverde col-sm-12">Login</button>
                             <p class="letrasCafe text-center">¿Aún no tienes una cuenta?</p>
                             <button type="button" class="col-sm-12 btn btn-link loginLetter">Crear una Cuenta</button>
                         </form>
@@ -217,7 +221,7 @@
     </div>
   </footer>
 
-
+   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>

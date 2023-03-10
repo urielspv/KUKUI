@@ -13,6 +13,7 @@
     <!-- Iconos -->
     <link rel="stylesheet" href="https://kit.fontawesome.com/8940c21cf5.css" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8940c21cf5.js" crossorigin="anonymous"></script>
+    <script src="../js/validacionCorreo.js"></script>
 </head>
 <body>
 
@@ -122,20 +123,21 @@
 <br><br><br>
 <div class="container">
 
-<form>
+<form novalidate>
     <!-- Inicia primera fila -->
     <div class="row mb-4">
       <div class="col">
         <div class="form-outline">
            <label class="form-label" for="inputNombre">Nombre*</label>
-          <input type="text" id="inputNombre" class="form-control input" />
+          <input type="text" id="inputNombre" class="form-control input" required />
           
         </div>
       </div>
       <div class="col">
         <div class="form-outline">
-          <label class="form-label" for="inputEmail">Email*</label>
-          <input type="text" id="inputEmail" class="form-control input " />
+          <label class="form-label" for="mail">Email*</label>
+          <input type="email" id="mail" class="form-control input " required />
+          <span class="error" aria-live="polite"></span>
         </div>
       </div>
       
@@ -146,14 +148,14 @@
         <div class="col">
           <div class="form-outline">
              <label class="form-label" for="inputEmpresa">Empresa*</label>
-            <input type="text" id="inputEmpresa" class="form-control input" />
+            <input type="text" id="inputEmpresa" class="form-control input" required />
             
           </div>
         </div>
         <div class="col">
           <div class="form-outline">
             <label class="form-label" for="inputTitulo">Titulo del Mensaje*</label>
-            <input type="text" id="inputTitulo" class="form-control input" />
+            <input  type="text" id="inputTitulo" class="form-control input" required />
           </div>
         </div>
       </div>
@@ -163,11 +165,11 @@
     <!-- fila de mensaje -->
     <div class="form-outline mb-4">
         <label class="form-label" for="inputMensaje">Mensaje</label>
-      <textarea class="form-control input" id="inputMensaje" rows="4"></textarea>
+      <textarea class="form-control input" id="inputMensaje" rows="4" required></textarea>
     </div>
   
     <!-- button -->
-    <button  type="submit" class="mb-4 btn-frm">Enviar</Em></button>
+    <button onclick="validar()" type="submit" class="mb-4 btn-frm">Enviar</Em></button>
   </form>
 
 
