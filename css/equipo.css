@@ -1,64 +1,142 @@
+.textoheader {
+    font-size: small;
+    color: #9B9B9B;
+
+}
+
+.cards-wrapper{
+    display: flex;
+    margin: 110px;
+
+}
+
+.card{
+    width:calc(100%/3);
+    margin:10px;
+    
+}
+
+.card-text{
+    font-weight: bolder;
+    font-size: small;
+    color:#4A2E10;
+}
+
+.texto2{
+    font-family:cursive;
+    font-size: small; 
+    color:#70A83B;
+}
+
+/* CSS DE INDEX*/
+
+
+
 /* **********CARDS******************* */
 .card-hover:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transform: translateY(-10px);
     transition: all 0.5s ease;
   }
-
+.boton-blanco{
+  background-color: #FFFFFF;
+  color:#4A2E10;
+}
 .boton-verde{
   background-color: #70A83b;
   color:#FFFFFF;
-
-  font-family: 'Roboto', sans-serif;    
-  font-weight: 600;
-
-}
-.boton-verde:hover{
-  background-color: #458806;
-  color:#FFFFFF;
-
 }
 /* Este boton es cafe  */
 .boton-cafe{
     background-color:#4A2E10;
     color:#FFFFFF;
+    font-size: 10px;
+    border-radius: 8px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    padding: 0.5rem 1rem;
 }
-.boton-cafe:hover{
-  background-color:#eaeaea;
-    color:#70A83B;
-}
-
-.texto-card{
+.texto-kukui{
   font-size: 23px;
   font-family: 'Roboto', sans-serif;    
   font-weight: 700;
 }
 
-.card-chica{
-  width: 12rem;
-  min-width: 7rem;
-  max-width: 8rem;
-  font-size: 12px;
+/* texto cafe */
+.texto-cafe{
+  text-align: left;
+  color: #4A2E10;
 }
 
-@media (min-width: 720px) {
-    .card-chica{
-      font-size: 20px;
-      min-width: 20rem;
-    }
+.fa-star{
+  font-size: 0.6rem;
+  color: white;
+
 }
 
-.botonsito{
-  font-size: 10px;
+.hover:hover{
+  background-color: #4A2E10;
+  color:#FFFFFF;
+  
 }
-@media (min-width:720px ) {
-    .botonsito{
-      font-size: 20px;
-    }
+
+
+  /* css Nav Bar */
+/* .nav-item {
+  border-radius: 100px;
+  border-color: #ffffff;
+  color: #4A2E10;
+  background-color: #ffffff;
 }
-.no-margin{
-  margin: 0;
+
+.nav-item:hover {
+  background-color: white;
+  color: white;
 }
+.nav-link:hover {
+  background-color: white;
+  color: white;
+}
+.nav-item {
+  border-radius: 100px;
+  background-color: #ffffff;
+}
+
+#buttonIngresar {
+  background-color: #ffffff;
+  color: #4A2E10;
+  padding: 10px 20px;
+  border-radius: 100px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#buttonIngresar{
+  background-color: #4A2E10;
+  color: #ffffff;
+}
+#buttonIngresar:Hover{
+  background-color: #FFFFFF;
+  color: #ffffff;
+}
+#buttonCuenta {
+  background-color: #eaeaea;
+  color: #4A2E10;
+  padding: 10px 20px;
+  border-radius: 100px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+} */
+
+
+.card-hover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  transition: all 0.5s ease;
+}
+
 /* Boton Cafe con Hover Bco*/
 
 .botoncafe {
@@ -105,16 +183,7 @@
   }
 }
 
-/* NAV BAR :0*/
-.botonesIngresar{
-  background-color:#eaeaea;
-  color: #4A2E10;
-  font-weight: 600;
-}
-.botonesIngresar:hover{
-  background-color: #70A83B;
-  color: #FFFFFF;
-}
+
 .nav-font{
   font-size: 12px;
   color: #4A2E10;
@@ -123,6 +192,7 @@
 .nav-font:hover{
   color:#70A83b;
 }
+
 @media (min-width: 720px) {
   .facet_sidebar {
     font-size: 25px;
@@ -200,6 +270,45 @@
   }
 }
 
+/*Login CARD - OSCAR*/
+
+.loginCard {
+    background: #F4F4F4;
+}
+
+/*Login Letters- OSCAR*/
+
+.loginLetter {
+  color: rgb(64, 57, 57);
+}
+
+.loginLetter:hover {
+  color: #70A83B;
+}
+
+/*Letters Brown- OSCAR*/
+
+.letrasCafe {
+  color: rgb(64, 57, 57);
+}
+
+/* Filtro */
+
+.botonFiltro {
+  background-color:  #F4F4F4;
+  color: rgb(64, 57, 57);
+  border-radius: 40px;
+}
+
+.botonFiltro:hover {
+  background-color:rgb(64, 57, 57);
+  color: #ffffff;
+}
+
+.botonFiltro:active{
+  background-color:rgb(64, 57, 57);
+  color: #ffffff;
+}
 
 .botonCafeCarrusel {
   font-size: larger;
@@ -216,18 +325,8 @@
   color: rgb(64, 57, 57);
   border-color: rgb(64, 57, 57);
 }
-@media (min-width: 720px) {
-  .loginPic {
-    height: 100%;
-    width: 100%;
-    
-  }
-}
 
-.imgTamañoLogin {
-  width: 100px;
-  height: 100px;
-}
+
 
 
 body{
@@ -244,88 +343,12 @@ a {
 }
 footer{
   color: #4A2E10;
-<<<<<<< HEAD
-  padding: 20px;
-  border-radius: 100px;
-  margin: 5px;
-  transition: background-color 0.3s ease;
-=======
 }
 /*tamaño de los iconos*/
 .list-inline-item i {
   font-size: 30px;
->>>>>>> 04fd3fe23fa1536fab1438acbdb809257247d79b
 }
 
 
 
 
-
-
-/*EQUIPO STYLE*/
-.textoheader {
-  font-size: small;
-  color: #9B9B9B;
-
-}
-
-<<<<<<< HEAD
-#buttonCuenta {
-  background-color: #ffffff;
-  color: #4A2E10;
-  padding: 20px;
-  border-radius: 100px;
-  margin: 5px;
-  transition: background-color 0.3s ease;
-=======
-.cards-wrapper{
-  display: flex;
-  margin: 50px;
->>>>>>> 04fd3fe23fa1536fab1438acbdb809257247d79b
-}
-
-
-.card{
-  width:calc(100%/3);
-  margin:10px;
-  border: none;
-  border-radius: 0;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  width: 400px;
-  
-}
-
-.carousel-inner{
-  padding: 1em;
-}
-
-.carousel-control-prev span, 
-.carousel-control-next span{
-  width: 3.0rem;
-  height:3.0rem;
-}
-.card-text{
-  font-weight: bolder;
-  font-size: small;
-  color:#4A2E10;
-}
-
-.texto2{
-  font-size: small; 
-  color:#70A83B;
-}
-
-@media screen and (max-width: 567px){
-  .card:not(:first-child){
-  display: none;
-}
-}
-
-.image-wrapper img{
-  max-width: 100%;
-  max-height: 100%;
-
-}
-
-
-/*TERMINA EQUIPO STYLE*/

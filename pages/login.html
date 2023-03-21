@@ -1,12 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-p0n/9fxENI9Dp7+icJYnRmEqn+hsA1F3LCq3l32PQJc/19oM9QTx5J5Y5F5Ew1Hpn4NztN+lSGz+jcrWbLl5GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/8940c21cf5.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8940c21cf5.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../css/navBar.css">
+        <link rel="stylesheet" href="../css/stylesLogin.css">
+        
 </head>
+
 <body>
-    
-</body>
+
+
+    <!-- BARRA NAV -->
+
+    <header>
+        <!-- place navbar here -->
+        <!-- Barra de navegación -->
+        <nav class=" py-4 border navbar navbar-sm navbar-expand-xl bg-white sticky-top">
+            <div class="  container-fluid d-flex justify-content-sm-center ">
+
+                <div class=" col-12 col-md-3 d-flex justify-content-center">
+                    <a class="navbar-brand " href="../index.html">
+                        <img class=" img-fluid "
+                            src="../img/LogoTransparente/4-ORIGINAL.png"
+                            style="width: 100px;" alt="Logo">
+                    </a>
+                </div>
+                <div class=" navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav  ">
+                        <div class="d-flex justify-content-between ">
+                            <li class="nav-item btn flex-fill   col-2  ">
+                                <a class="nav-link nav-font facet_sidebar" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item btn  flex-fill   col-2">
+                                <a class="nav-link nav-font facet_sidebar" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item btn   flex-fill   col-2">
+                                <a class="nav-link btn nav-font facet_sidebar" href="./tienda.html">Tienda</a>
+                            </li>
+                            <li class="nav-item btn  flex-fill  col-2">
+                                <a class="nav-link btn nav-font facet_sidebar" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item btn flex-fill  col-2">
+                                <a class="nav-link nav-font facet_sidebar" href="./equipo.html">Equipo</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class=" container-fluid d-flex justify-content-center">
+                    <ul class=" container row d-flex justify-content-xxl-end justify-content-md-center ">
+
+                        <li id="buttonIngresar" class="nav-item  btn col-6 col-md-6 col-xxl-4">
+                            <a class="nav-link btn-light border-0 botonesIngresar rounded-pill p-2" href="./login.html"><i
+                                    class="fa-solid fs-5 me-2 fa-circle-user"></i> Ingresar</a>
+                        </li>
+                        <li class="nav-item  btn col-6 col-md-6 col-xxl-4">
+                            <a id="" class="nav-link botonesIngresar rounded-pill p-2" href="./signUp.html"><i
+                                    class="fa-solid fs-5 me-2 fa-circle-plus"></i> Crear cuenta </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+
+
+
+    <!-- LOGO KUKUI -->
+
+
+
+    <div class="d-flex justify-content-center">
+        <img src="../img/LogoTransparente/3-VERDE.png" class="img-fluid" style="max-width: 9%;" alt="LOGO KUKUI VERDE">
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- CARD LOGIN -->
+
+    <!-- IMAGEN -->
+<div class="marginLogin">
+    <div class="d-flex justify-content-center">
+        <div class="card mb-3" style="max-width: 1000px; ">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="../img/FotosContenidoExtra/ContenidoChocoAguacateTrigo.jpg"
+                        class="img-fluid rounded-start" alt="...">
+                </div>
+
+                <!-- FORMULARIO -->
+                <div class="col-md-6 loginCard d-flex align-items-center"> <!--Centrar VERTICAL-->
+                    <div class="card-body d-flex justify-content-center align-items-center"> <!--CENTRAR HORIZONTAL-->
+
+                        <!-- FORMULARIO LOGIN -->
+                        <div>
+                            
+                        </div>
+                        <form>
+                            <h4 class="letrasCafe">Nos alegra verte de nuevo.</h4>
+                            <p class="letrasCafe"> Por favor, ingresa tus datos.</p>
+                            <br>
+                            <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-12 col-form-label fs-5 letrasCafe">Email</label>
+                                <div class="col-sm-12">
+                                    <input class="form-control" type="text" placeholder="ejemplo@gmail.com"
+                                        aria-label="default input example">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3"
+                                    class="col-sm-12 col-form-label fs-5 letrasCafe">Contraseña</label>
+                                <div class="col-sm-12">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="col-sm-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label letrasCafe" for="gridCheck1">Recordarme</label>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="col-sm-12 btn btn-link loginLetter">Olvidé mi
+                                            Contraseña</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <button type="submit" class="btn botonverde col-sm-12">Login</button>
+                            <p class="letrasCafe text-center">¿Aún no tienes una cuenta?</p>
+                            <button type="button" class="col-sm-12 btn btn-link loginLetter">Crear una Cuenta</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!---Footer-->
+    <footer class="bg-light py-5">
+        <div class="container text-right">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Contactanos</h4>
+                    <br>
+                    <ul class="list-unstyled">
+                        <h6> Dirección de la empresa</h6>
+                        <li><i class="fas fa-map-marker-alt"></i>aqui #546</li>
+                        <br>
+                        <h6>Teléfono:</h6>
+                        <li><i class="fas fa-phone-alt"></i> 123-456-7890</li>
+                        <br>
+                        <h6>Correo electrónico:</h6>
+                        <li><i class="fas fa-envelope"></i> info@miempresa.com</li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <img src="../img/LogoTransparente/2-CAFE.png" alt="Logo" style="max-height: 150px;">
+                        <h6>Simply dummy text of the printing and typesetting industry</h6>
+                        <ul class="list-inline mt-3">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/miempresa"><i
+                                        class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/miempresa"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/miempresa"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/company/miempresa"><i
+                                        class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-left">
+                    <h4>Utility Pages</h4>
+                    <ul class="list-unstyled">
+                        <br>
+                        <li><a href="#" class="link-success">Licences</a></li>
+                        <br>
+                        <li><a href="#" class="link-success">Style Guide</a></li>
+                        <br>
+                        <li><a href="#" class="link-success">Password Protected</a></li>
+                        <br>
+                        <li><a href="#" class="link-success">404 Not Found</a></li>
+                        <br>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-12 text-center">
+                    <p>&copy; 2023 Kukui Mid. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
 </html>

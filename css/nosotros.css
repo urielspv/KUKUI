@@ -1,0 +1,72 @@
+
+
+.about{
+    font-family: cursive;
+    color: rgb(108, 180, 0);
+}
+
+.texto1{
+font-size: 25px;
+color: rgb(71, 32, 0);
+
+
+
+
+
+}
+
+.parrafo{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px;
+    padding: auto ;
+    margin: auto;
+
+}
+
+
+
+
+
+.tractor{
+font-size: 20px;
+color: rgb(119, 71, 0);
+border: 10px;
+
+}
+
+.fabrica{
+
+    font-size: 20px;
+    color: rgb(119, 71, 0);
+    border: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.buton{
+    background-color: rgb(78, 52, 1);
+    color: rgb(255, 255, 255);
+    border: 30px;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+.video{
+    text-align: center;
+    border-radius: 30%;
+
+
+
+}
