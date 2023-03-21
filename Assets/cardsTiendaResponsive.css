@@ -1,0 +1,381 @@
+
+:root{
+    margin: 10px;
+}
+/* Aqui empieza la card del producto -------------------------*/
+.card-producto{
+display: grid;
+grid-template-columns: repeat(2,2fr);
+max-width: 1041px;
+min-height: 564px;
+max-height: 630px;
+background: #FFFFFF;
+border: 1px solid #DFDFDF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+}
+/* Seccion que contiene la imagen del producto ---------------*/
+.card-producto__img{
+text-align: center;
+color: white;
+background-color: gray;
+width: 414px;
+height: 564px;
+border-radius: 30px 0px 0px 30px;
+}
+
+/* Contenedor toda los datos del producto ---------------------*/
+.card-producto__body{
+    /* margin-left: 97px;
+    margin-top: 52px; */
+    display: grid;
+    align-content: center;
+    width: 500px;
+    min-width: 400px;
+}
+
+/* Titulo,subtitulo e informacion del producto ---------------*/
+.card-producto__info{
+  height:184px ;
+}
+.card-producto__info h1{
+/* Titulo card */
+border: 1px solid violet;
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+color: #4A2E10;
+}
+.card-producto__info h2{
+/* Subtitulo card */
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: #70A83B;
+
+}
+.card-producto__info p{
+    /* Texto en la card */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 165.4%;
+    color: #4A2E10;
+    
+}
+
+/* Aqui eliges el tamaño del producto  -----------------------*/
+.card-producto__tamaños h3{
+    /* Selecciona el tamaño */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A8A8A8;
+}
+.card-producto__tamaños label{
+  /* Botones en verde para elegir tamaño del producto */
+    /* 40gr */    /* 80gr */
+border-radius: 10px;
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+text-align: center;
+width:62px;
+height:37px;
+border: 1px solid #DEDDDD;
+background-color: #FFFFFF;
+color: #B8B8B8;;
+}
+.card-producto__tamaños input[type="radio"]:checked +label{
+  pointer-events: none;
+  background: #70A83B;
+  color: #FFFFFF;
+  border: none;
+}
+.card-producto__tamaños input[type="radio"]:hover +label{
+  border: 1px solid #DEDDDD;
+}
+
+
+
+/* Columnas "Seleccionar producto y cantidad */
+.card-producto__columnas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* Columna 1 "Seleccionar PRODUCTO-------------------" */
+.card-producto__columnas--col1{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 4px;
+width:234px;
+}
+  .card-producto__seleccion{
+    width: fit-content;
+  }
+  .card-producto__seleccion h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A8A8A8;
+  }
+
+  /* Estilo para la opción de radio */
+/* .radio-option { */
+  .card-producto__seleccion label{
+    position: relative;
+    display: inline-block;
+    /* cursor: pointer; */
+    font-size: 16px;
+    line-height: 20px;
+    
+  }
+  .radio-option h6{
+    color:#4A2E10;
+    text-align: center;
+
+  }
+  
+  /* Estilo para el input de radio */
+  /* .radio-option  */
+  .card-producto__seleccion input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+    
+  }
+  
+  /* Estilo para la imagen de radio */
+  .card-producto__radio-image {
+    top: 0;
+    left: 0;
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    border: 1px solid #EDECEC;
+    background-image: url('../img/FotosTienda/AguacateTiendaBC.png');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  #card-producto__Aloe{
+    background-image: url('../img/FotosTienda/AloeTiendaBC.png');
+  }
+  #card-producto__Carbon{
+    background-image: url('../img/FotosTienda/CarbonTiendaBC.png');
+  }
+  #card-producto__Coco{
+    background-image: url('../img/FotosTienda/CocoTiendaBC.png');
+  }
+  #card-producto__Aguacate{
+    background-image: url('../img/FotosTienda/AguacateTiendaBC.png');
+  }
+  #card-producto__Almendra{
+    background-image: url('../img/FotosTienda/ChocoAlmTiendaBC.png');
+  }
+  #card-producto__Trigo{
+    background-image: url('../img/FotosTienda/FibraTiendaBC.png');
+  }
+
+
+  /* Estilo para la imagen de radio seleccionada */
+  /* .radio-option */
+  .card-producto__seleccion input[type="radio"]:checked + .card-producto__radio-image {
+    background-color: #333;
+    border:5px solid #70A83B;
+  }
+  /* .radio-option */
+  .card-producto__seleccion input[type="radio"]:hover + .card-producto__radio-image {
+    cursor: pointer;
+    background-color: #333;
+    filter:blur(1px) brightness(0.7);
+    -webkit-filter:blur(1px) brightness(0.7);
+    /* transition: all .5s ease; */
+    transition: filter 0.5s ease-in-out;
+  }
+
+
+  
+  /* .radio-option */
+  .card-producto__seleccion input[type="radio"]:checked:hover + .card-producto__radio-image{
+    pointer-events: none;
+    filter:blur(0px) brightness(1);
+    -webkit-filter:blur(0px) brightness(1);
+    border:5px solid #70A83B;
+  }
+
+
+
+/* *********************************Columna 2  *********************/
+/* "PRECIO" "CANTIDAD" "BOTON-VERDE */
+.card-producto__columnas--col2{
+  display:grid;
+  align-content:space-evenly;
+  justify-content: center;
+}
+.card-producto__columnas--col2 div{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.card-producto__columnas--col2 label{
+  /* Guia para el precio y cantidad texto gris*/
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #A8A8A8;
+}
+
+/* ----------------Precio del producto----------------------- */
+.card-producto__precio{
+    /* $120.00 */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #4A2E10;
+
+}    
+
+/* ----------------Cantidad---------------*/
+.card-producto__cantidad{
+/* Boton para añadir cantidad */  
+display: flex;
+justify-content:space-between;
+align-items: center;
+height: 35px;
+width: 121px;
+border-radius: 30px;
+background: #FFFFFF;
+border: 1px solid #DEDDDD;
+border-radius: 30px;
+padding: 5px;
+text-align: center;
+
+}
+.card-producto__cantidad button{
+  /* Botones de agregar y quitar */
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  border:none; 
+}  
+.card-producto__cantidad--añadir{
+  /* Icono de añadir */
+  color: #70A83B;
+  text-align: right;
+}  
+.card-producto__cantidad--añadir:hover{
+  color: #619234;
+}  
+.card-producto__cantidad--añadir:active{
+color:darkgreen;  
+}
+/* ----------------------- */
+.card-producto__cantidad--restar{
+  /* Icono de quitar */
+  color: #B8B8B8;
+  text-align: left;
+}  
+.card-producto__cantidad--restar:hover{
+  background-color: transparent;
+  color: #aa8484;
+}  
+.card-producto__cantidad--restar:active{
+  color:darkred  
+}
+/* -------------------------- */
+.card-producto__cantidad--numero{
+  /* Cantidad de productos (numero) */
+font-size: 20px;  
+font-weight: 600;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+width: 20px;
+}
+/* ---------------------- añadir al carrito--------------------- */
+
+.card-producto__comprar--boton{
+  /* Boton verde de añadir al carrito */
+height: 52px;  
+width: 219px;
+background: #70A83B;
+border-radius: 50px;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.card-producto__comprar--boton:hover{
+  background-color: #4A2E10;
+  transition: background-color .5s ease;
+}  
+.card-producto__comprar--boton:active{
+  
+}  
+
+
+/* ----------Codigo para que funcionen los iconos------------ */
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+  /* .radio-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+    font-style: normal;
+    font-size: 14px;
+    font-weight:bold;
+    line-height: 14px;
+    text-align: center;
+    color: #70A83B;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .radio-text:hover{
+    
+    color: white;
+  } */
