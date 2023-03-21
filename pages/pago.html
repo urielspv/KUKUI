@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-p0n/9fxENI9Dp7+icJYnRmEqn+hsA1F3LCq3l32PQJc/19oM9QTx5J5Y5F5Ew1Hpn4NztN+lSGz+jcrWbLl5GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/8940c21cf5.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/pago.css">
+    <script src="https://kit.fontawesome.com/8940c21cf5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/stylesLogin.css">
+    <script src="../js/validacionCorreo.js"></script>
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+
+    <nav class=" py-4 border navbar navbar-sm navbar-expand-xl bg-white sticky-top">
+        <div class="  container-fluid d-flex justify-content-sm-center ">
+            <div class=" col-12 col-md-3 d-flex justify-content-center">
+                <a class="navbar-brand " href="#">
+                    <img class=" img-fluid "
+                        src="http://isla.merida.gob.mx/serviciosinternet/Emprendedores/img/m/51.jpg"
+                        style="width: 100px;" alt="Logo">
+                </a>
+            </div>
+            <!-- Botones nav bar -->
+            <div class=" navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav  ">
+                    <div class="d-flex justify-content-between ">
+                        <li class="nav-item btn flex-fill   col-2  ">
+                            <a class="nav-link nav-font facet_sidebar" href="#">Home</a>
+                        </li>
+                        <li class="nav-item btn  flex-fill   col-2">
+                            <a class="nav-link nav-font facet_sidebar" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item btn   flex-fill   col-2">
+                            <a class="nav-link btn nav-font facet_sidebar" href="#">Tienda</a>
+                        </li>
+                        <li class="nav-item btn  flex-fill  col-2">
+                            <a class="nav-link btn nav-font facet_sidebar" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item btn flex-fill  col-2">
+                            <a class="nav-link nav-font facet_sidebar" href="#">Equipo</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <!-- Botones INGRESAR Y CREAR CUENTA -->
+            <div class=" container-fluid d-flex justify-content-center">
+                <ul class=" container row d-flex justify-content-xxl-end justify-content-md-center ">
+                    <li id="buttonIngresar" class="nav-item  btn col-6 col-md-6 col-xxl-4">
+                        <a class="nav-link btn-light border-0 botonesIngresar rounded-pill p-2" href=""><i
+                                class="fa-solid fs-5 me-2 fa-circle-user"></i> Ingresar</a>
+                    </li>
+                    <li class="nav-item  btn col-6 col-md-6 col-xxl-4">
+                        <a id="" class="nav-link botonesIngresar rounded-pill p-2" href="#"><i
+                                class="fa-solid fs-5 me-2 fa-circle-plus"></i> Crear cuenta </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- AGREGAR INFORMACION DE PAGO-->
+
+
+    <div class="container">
+        <br>
+        <div class="row m-0">
+            <div class="col-md-7 col-12">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="row box-right">
+                            <div class="col-md-8 ps-0 ">
+                                <p class="ps-3 textmuted fw-bold h6 mb-0">TOTAL DE COMPRA</p>
+                                <p class="h1 fw-bold d-flex"> <span
+                                        class=" fas fa-dollar-sign textmuted pe-1 h6 align-text-top mt-1"></span>920
+                                    <span class="textmuted">.00</span>
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="p-cafe"> Subtotal </p>
+                                <p class="fw-bold mb-3"><span class="fas fa-dollar-sign pe-1"></span>800 <span
+                                        class="textmuted">.00</span> </p>
+                                <p class="p-cafe">Envío</p>
+                                <p class="fw-bold"><span class="fas fa-dollar-sign pe-1"></span>130<span
+                                        class="textmuted">.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0">
+                        <div class="box-right">
+                            <div class="d-flex mb-2">
+                                <p class="fw-bold">Dirección de Entrega</p>
+                                
+                            </div>
+                            <div class="d-flex mb-2">
+                                <p class="h7"></p>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mb-2">
+                                    <p class="textmuted h8">Direccion</p> <input class="form-control"
+                                        type="text" placeholder="Calle Andrómeda #2023">
+                                </div>
+                                <div class="col-6">
+                                    <p class="textmuted h8">Colonia</p> <input class="form-control" type="text"
+                                        placeholder="San Mateo">
+                                </div>
+                                <div class="col-6">
+                                    <p class="textmuted h8">Ciudad</p> <input class="form-control" type="text"
+                                        placeholder="Zapopan">
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="col-6">
+                                    <p class="textmuted h8">Estado</p> <input class="form-control" type="text"
+                                        placeholder="Jalisco">
+                                </div>
+                                <div class="col-6">
+                                    <p class="textmuted h8">Código Postal</p> <input class="form-control" type="text"
+                                        placeholder="44100">
+                                </div>
+                                <br><br><br>
+                                <div class="col-12 mb-2">
+                                    <p class="textmuted h8">Referencias</p> <input class="form-control"
+                                        type="text" placeholder="Fachada gris, esq. con calle Orion...">
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="d-flex mb-2">
+                                <p class="fw-bold">Información de contacto</p>
+                                
+                            </div>
+                            <div class="d-flex mb-2">
+                                <p class="h7"></p>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="textmuted h8">Nombre(s)</p> <input class="form-control" type="text"
+                                        placeholder="Daniel Hector">
+                                </div>
+                                <div class="col-6">
+                                    <p class="textmuted h8">Apellidos</p> <input class="form-control" type="text"
+                                        placeholder="Garcia Madariaga">
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="col-6">
+                                    <p class="textmuted h8">Fecha de Nacimiento</p> <input class="form-control" type="text"
+                                        placeholder="dd/mm/aaaa">
+                                        
+                                </div>
+                                <div class="col-6">
+                                    <p class="textmuted h8">E-Mail</p> <input class="form-control" type="text"
+                                        placeholder="oscar@gmail.com">
+                                </div>
+                                <br><br><br>
+                                <div class="col-6">
+                                    <p class="textmuted h8">Celular</p> <input class="form-control" type="text"
+                                        placeholder="33 1234 4523">
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-5 col-12 ps-md-5 p-0 ">
+                <div class="box-left">
+                    
+                    <div class="">
+                        <p class="h5 fw-bold mb-1 textwhite">Información de cobro</p>
+                        <br>
+                        <p class="textwhite h8 mb-2">Introduce la Información de tu método de pago</p>
+                        <div class="form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card border-0"> <input class="form-control ps-5" type="text" minlength="16" maxlength="16"
+                                            placeholder="Número de Tarjeta"> <span class="far fa-credit-card"></span> </div>
+                                </div>
+                                <div class="col-6"> <input class="form-control my-3" type="text" placeholder="MM/AA">
+                                </div>
+                                <div class="col-6"> <input class="form-control my-3" type="text" placeholder="cvv">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="col-12 mb-2">
+                                    <p class="textwhite h8">Direccion de la Tarjeta</p> <input class="form-control"
+                                        type="text" placeholder="Calle Andrómeda #2023">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="col-12 mb-2">
+                                    <p class="textwhite h8">Nombre en la Tarjeta</p> <input class="form-control"
+                                        type="text" placeholder="Uriel Lizzet Kang Meneses">
+                                </div>
+                            </div>
+                            <div class="btn textwhite greenbtn d-block h8">PAGAR <span
+                                    class="fas fa-dollar-sign ms-2"></span>920.00<span
+                                    class="ms-3 fas fa-arrow-right"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!---Footer-->
+    <footer class="bg-light py-5">
+        <div class="container text-right">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Contactanos</h4>
+                    <br>
+                    <ul class="list-unstyled">
+                        <h6> Dirección de la empresa</h6>
+                        <li><i class="fas fa-map-marker-alt"></i> Fracc. Villas del Sol. Mérida, Yucatán, 97118</li>
+                        <br>
+                        <h6>Teléfono:</h6>
+                        <li><i class="fas fa-phone-alt"></i> 999 950 0785</li>
+                        <br>
+                        <h6>Correo electrónico:</h6>
+                        <li><i class="fas fa-envelope"></i> kukui.mid@gmail.com</li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <img src="../img/LogoTransparente/4-ORIGINAL.png" alt="Logo" style="max-height: 150px;">
+                        <h6></h6>
+                        <ul class="list-inline mt-3">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/miempresa"><i
+                                        class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/miempresa"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/miempresa"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/company/miempresa"><i
+                                        class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-left">
+                    <h4>Páginas</h4>
+                    <ul class="list-unstyled">
+                        <br>
+                        <li><a href="./pages/nosotros.html" class="link-success">Nosotros</a></li>
+                        <br>
+                        <li><a href="./pages/tienda.html" class="link-success">Tienda</a></li>
+                        <br>
+                        <li><a href="./pages/contacto.html" class="link-success">Contacto</a></li>
+                        <br>
+                        <li><a href="./pages/equipo.html" class="link-success">Equipo</a></li>
+                        <br>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-12 text-center">
+                    <p>&copy; 2023 Kukui MID. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
