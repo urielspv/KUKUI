@@ -119,54 +119,32 @@
     <div class="container ">
         <div class="row">
             <div class=" col">
-                <!-- Card 1-->
-                <div class=" card-hover p-0 border card rounded-5 container card-chica texto-card"
-                    style="width: 20rem;">
-                    <div><!-- burbuja de notificacion -->
-                        <span
-                            class=" position-absolute top start-100 translate-middle badge text-bg-success rounded-circle">3</span>
-                        <!-- Boton cafe de arriba -->
-                        <a class="mx-2 ms-md-4 mt-3 btn btn-sm rounded-3 boton-cafe" href="">Cabello graso</a>
-                    </div>
-                    <!-- IMG -->
-                    <div class="container">
-                        <img class="img-fluid" src="../img/FotosTiendaTransparente/AguacateTiendaBC.png"
-                            preserveAspectRatio="xMidYMid slice" width="100%" height="235" alt="">
-                    </div>
-                    <!-- CARD BODY -->
-                    <div class="card-body pb-1">
-                        <button class="btn btn-secondary p-0 px-1 opacity-50 disabled">80g</button>
-                        <button class="btn btn-warning p-0 px-1 opacity-50 disabled">4.7 <i
-                                class="fa-regular fa-star"></i></button>
-                        <span class="d-flex d-block " style="color:#4a2e10">Shampoo Sólido Aloe</span>
-                    </div>
-                    <!-- CARD FOOTER -->
-                    <div class="card-footer justify-content-lg-center texto-kukui 
-                      rounded-5 rounded-top d-flex align-items-center " style="background-color: #4a2e10">
-                        <div class="row d-flex flex-fill justify-content-lg-around">
-                            <!-- Precio -->
-                            <div class=" container col-12 col-md-4 d-flex  ms-1">
-                                <span style="color:white; ">$120.00</span>
-                            </div>
-                            <div class="col-10 col-md-7 botonsito ">
-                                <!-- Boton Comprar -->
-                                <div class="">
-                                    <a class=" btn rounded-pill  d-flex align-items-center justify-content-center boton-verde"
-                                        href="">Comprar<i class="fa-solid m-1 fa-cart-plus"></i></a>
-                                </div>
-                                <!-- Boton de añadir + -->
-                                <div id="BotonCompraCollapse" class="collapse">
-                                    <div class=" rounded-pill d-flex align-items-center justify-content-around boton-verde"
-                                        href="" style="background-color: #ffffff;height: 50px;">
-                                        <i class=" fs-1 fa-solid fa-circle-minus boton" style="color:#B8B8B8"></i>
-                                        <span class=" mb-0" style="color: #4a2e10;">3</span>
-                                        <i class=" fs-1 fa-solid fa-circle-plus" style="color:#70A83B;"></i>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- CARD -->
+                <div class="carta rounded-5">
+                    <div class="carta-body">
+                        <!-- Aqui esta el boton cafe de arriba-->
+                        <div class="carta-head">
+                            <button class="btn btn-sm carta__boton-cafe">Cabello Graso</button>
+                        </div>
+                        <!-- Aqui esta la imagen -->
+                        <div class="carta-img ">
+                            <img class="img-fluid" src="../img/FotosTienda/AguacateTiendaBC.png" alt="">
+                        </div>
+                        <!-- Aqui las etiquetas y el titulo -->
+                        <div>
+                            <button class="btn-gris">40g</button>
+                            <button class="btn-amarillo ">4.4<i class="fa-solid fa-star"></i></button>
+                            <h5>Shampoo Sólido Aguacate</h5>
                         </div>
                     </div>
-                </div><!--***************** Aqui Termina la CARD****************** -->
+                    <!-- Parte Cafe de la CARD -->
+                    <div class="carta-footer rounded-5 rounded-top ">
+                        <p>$120.00</p>
+                        <button>Comprar<span class="material-symbols-outlined">
+                                add_shopping_cart</span></button>
+                    </div>
+                </div>
+                <!-- CARD TERMINA -->
             </div>
             <div class=" col">
                 <!-- Card 2-->

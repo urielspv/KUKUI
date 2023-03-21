@@ -1,4 +1,4 @@
-/* **********CARDS******************* */
+/* ---------------------Tienda----------------------*/
 .card-hover:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transform: translateY(-10px);
@@ -105,7 +105,7 @@
   }
 }
 
-/* NAV BAR :0*/
+/* -------------NAV BAR ------------------*/
 .botonesIngresar{
   background-color:#eaeaea;
   color: #4A2E10;
@@ -255,7 +255,7 @@ footer{
 
 
 
-/*EQUIPO STYLE*/
+/*---------------Pagina EQUIPO ------------*/
 .textoheader {
   font-size: small;
   color: #9B9B9B;
@@ -311,7 +311,7 @@ footer{
 }
 
 
-/*TERMINA EQUIPO STYLE*/
+/**********************TERMINA EQUIPO STYLE***********/
 
 
 
@@ -470,4 +470,4 @@ font-variation-settings:
 'GRAD' 0,
 'opsz' 48
 }
-/* Aqui termina la card jeje */
+/* ***************Aqui termina la card ************/
