@@ -1,0 +1,52 @@
+.botonesIngresar {
+    background-color: #eaeaea;
+    color: #4A2E10;
+    font-weight: 600;
+}
+
+.botonesIngresar:hover {
+    background-color: #70A83B;
+    color: #FFFFFF;
+}
+
+
+.nav-font a{
+    font-size: 16px;
+    color: #4A2E10;
+    font-weight: 600;
+}
+
+.nav-font a:hover {
+    color: #70A83b;
+}
+
+@media (min-width: 720px) {
+    .nav-font a {
+        font-size: 25px;
+
+    }
+}
+.nav__botones{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 220px;
+    height: 100px;
+    border-color: violet;
+    border: 1px solid;
+}
+.nav__botones a{
+    width: 90px;
+    height: 90px;
+    background: #F5F5F5;
+    border: 5px solid #ABABAB;
+    /* border-radius: 48px; */
+    border-radius: 100%;
+}
+@media (min-width: 1250px) {
+    .nav__botones a{
+        position: relative;
+        left: 1000px;
+    }
+}
+

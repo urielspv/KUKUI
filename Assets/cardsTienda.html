@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./cardsTienda.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+  <form action="" class="border border-sucess card-producto">
+    <div class="card-producto__img border border-warning">
+      <!-- Aqui esta la imagen de la izquierda -->
+      <img src="" alt="IMAGEN" class="">
+    </div>
+    <div class="border border-danger card-producto__body">
+      <div class="card-producto__info border border-success">
+        <!-- Informacion del producto -->
+        <h1>Shampoo Sólido</h1>
+        <h2>Aguacate</h2>
+        <p>El acondicionador sólido para cabello es el complemento perfecto para tu rutina de cuidado capilar. Está
+          formulado con ingredientes naturales como manteca de cacao y de karité, aceite de coco y aceite de aguacate.
+          Este acondicionador proporciona una hidratación profunda y duradera para todo tipo de cabello.</p>
+        </div>
+        <!-- --------------------------------- -->
+      <div class="border border-success card-producto__tamaños">
+        <!-- Botones para seleccionar tamaño -->
+        <h3 class="">Selecciona el tamaño</h3>
+        <input type="radio" class="btn-check" name="tamaño" id="shampoo__chico" autocomplete="off" checked>
+        <label class="btn " for="shampoo__chico">40gr</label>
+        
+        <input type="radio" class="btn-check" name="tamaño" id="shampoo__grande" autocomplete="off">
+        <label class="btn " for="shampoo__grande">80gr</label>
+      </div>
+      <!-- ------------------------------------------ -->
+      <!--Columnas para elegir producto y para comprar  -->
+      <div class="border border-primary card-producto__columnas">
+        <!-- Columna 1 empieza -->
+        <div class="border border-danger card-producto__seleccion">
+        <h3>Selecciona tu shampoo ideal</h3>
+          <!-- Seleccion de productos -->
+          <div class="card-producto__columnas--col1">
+            <label >
+              <h6>Aloe</h6>
+              <input type="radio" name="option" value="Aloe" checked>
+              <span id="card-producto__Aloe" class="card-producto__radio-image"></span>
+            </label>
+            <label>
+              <h6 class="radio-text">Carbon</h6>
+              <input type="radio" name="option" value="Carbon">
+              <span id="card-producto__Carbon" class="card-producto__radio-image"></span>
+            </label>
+            <label>
+              <h6 class="radio-text">Coco</h6>
+              <input type="radio" name="option" value="Coco">
+              <span id="card-producto__Coco" class="card-producto__radio-image"></span>
+            </label>
+            <label>
+              <input type="radio" name="option" value="Aguacate">
+              <span id="card-producto__Aguacate" class="card-producto__radio-image"></span>
+              <h6 class="radio-text">Aguacate</h6>
+            </label>
+            <label>
+              <input type="radio" name="option" value="Almendra">
+              <span id="card-producto__Almendra" class="card-producto__radio-image"></span>
+              <h6 class="radio-text">Almendra</h6>
+            </label>
+            <label>
+              <input type="radio" name="option" value="Trigo">
+              <span id="card-producto__Trigo" class="card-producto__radio-image"></span>
+              <h6 class="radio-text">Trigo</h6>
+            </label>
+          </div>
+          <!-- -----------------Seleccion de productos---------------- -->
+        </div>
+        <!-- ------------COLUMNA 1---------------------- -->
+        <!-- Columna2 empieza -->
+          <div class="border border-danger card-producto__columnas--col2">
+            <!-- Aqui va el precio y su guia -->
+          <div>
+            <label>Precio:</label>
+            <h4 class="card-producto__precio">120<span style="font-size: 21px;">.00 mxn</span></h4>
+          </div>
+          <div >
+            <label for="card-pruducto__cantidad-shampoo">Cantidad:</label>
+            <!-- <button class="material-icons-outlined card-producto__cantidad--restar">
+              remove_circle
+            </button> -->
+            <input id="card-pruducto__cantidad-shampoo" class="card-producto__cantidad" type="number" min="0">
+              <!-- <span class="card-producto__cantidad--numero ">0</span> -->
+              <!-- <button class="material-icons-outlined card-producto__cantidad--añadir">
+                add_circle
+              </button> -->
+            </input>
+          </div>
+          <div>
+            <button class="card-producto__comprar--boton ">Añadir al carrito
+              <span class="material-icons-outlined">add_shopping_cart</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
