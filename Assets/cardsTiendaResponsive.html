@@ -14,13 +14,13 @@
 
 <body>
 
-  <form action="" class="border border-sucess card-producto">
-    <div class="card-producto__img border border-warning">
+  <form action="" class="card-producto">
+    <div class="card-producto__img">
       <!-- Aqui esta la imagen de la izquierda -->
       <img src="" alt="IMAGEN" class="">
     </div>
-    <div class="border border-danger card-producto__body">
-      <div class="card-producto__info border border-success">
+    <div class="card-producto__body">
+      <div class="card-producto__info">
         <!-- Informacion del producto -->
         <h1>Shampoo Sólido</h1>
         <h2>Aguacate</h2>
@@ -29,7 +29,7 @@
           Este acondicionador proporciona una hidratación profunda y duradera para todo tipo de cabello.</p>
         </div>
         <!-- --------------------------------- -->
-      <div class="border border-success card-producto__tamaños">
+      <div class="card-producto__tamaños">
         <!-- Botones para seleccionar tamaño -->
         <h3 class="">Selecciona el tamaño</h3>
         <input type="radio" class="btn-check" name="tamaño" id="shampoo__chico" autocomplete="off" checked>
@@ -40,48 +40,48 @@
       </div>
       <!-- ------------------------------------------ -->
       <!--Columnas para elegir producto y para comprar  -->
-      <div class="border border-primary card-producto__columnas">
+      <div class=" card-producto__columnas">
         <!-- Columna 1 empieza -->
-        <div class="border border-danger card-producto__seleccion">
+        <div class="card-producto__seleccion">
         <h3>Selecciona tu shampoo ideal</h3>
           <!-- Seleccion de productos -->
           <div class="card-producto__columnas--col1">
             <label >
-              <h6>Aloe</h6>
+              <!-- <h6>Aloe</h6> -->
               <input type="radio" name="option" value="Aloe" checked>
               <span id="card-producto__Aloe" class="card-producto__radio-image"></span>
             </label>
             <label>
-              <h6 class="radio-text">Carbon</h6>
+              <!-- <h6 class="radio-text">Carbon</h6> -->
               <input type="radio" name="option" value="Carbon">
               <span id="card-producto__Carbon" class="card-producto__radio-image"></span>
             </label>
             <label>
-              <h6 class="radio-text">Coco</h6>
+              <!-- <h6 class="radio-text">Coco</h6> -->
               <input type="radio" name="option" value="Coco">
               <span id="card-producto__Coco" class="card-producto__radio-image"></span>
             </label>
             <label>
               <input type="radio" name="option" value="Aguacate">
               <span id="card-producto__Aguacate" class="card-producto__radio-image"></span>
-              <h6 class="radio-text">Aguacate</h6>
+              <!-- <h6 class="radio-text">Aguacate</h6> -->
             </label>
             <label>
               <input type="radio" name="option" value="Almendra">
               <span id="card-producto__Almendra" class="card-producto__radio-image"></span>
-              <h6 class="radio-text">Almendra</h6>
+              <!-- <h6 class="radio-text">Almendra</h6> -->
             </label>
             <label>
               <input type="radio" name="option" value="Trigo">
               <span id="card-producto__Trigo" class="card-producto__radio-image"></span>
-              <h6 class="radio-text">Trigo</h6>
+              <!-- <h6 class="radio-text">Trigo</h6> -->
             </label>
           </div>
           <!-- -----------------Seleccion de productos---------------- -->
         </div>
         <!-- ------------COLUMNA 1---------------------- -->
         <!-- Columna2 empieza -->
-          <div class="border border-danger card-producto__columnas--col2">
+          <div class="card-producto__columnas--col2">
             <!-- Aqui va el precio y su guia -->
           <div>
             <label>Precio:</label>
@@ -92,7 +92,8 @@
             <!-- <button class="material-icons-outlined card-producto__cantidad--restar">
               remove_circle
             </button> -->
-            <input id="card-pruducto__cantidad-shampoo" class="card-producto__cantidad" type="number" min="0">
+            <input id="card-pruducto__cantidad-shampoo" class="card-producto__cantidad" type="number" min="0"
+            max="50" pattern="[0-9]">
               <!-- <span class="card-producto__cantidad--numero ">0</span> -->
               <!-- <button class="material-icons-outlined card-producto__cantidad--añadir">
                 add_circle
