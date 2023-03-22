@@ -1,0 +1,74 @@
+#botonmenos {
+
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.363);
+    border-style: hidden;
+
+}
+
+#botonmas{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:  rgb(112, 168, 59);
+    border-style: hidden;
+
+
+}
+
+#botonmenos2 {
+
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgba(0, 0, 0, 0.363);
+    border-style: hidden;
+
+}
+
+#botonmas2 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:  rgb(112, 168, 59);
+    border-style: hidden;
+
+
+}
+
+
+
+#botoncheckout{
+    background-color:  rgb(112, 168, 59);
+    color: azure;
+    border-color:  rgb(112, 168, 59);
+   border-style: dashed;
+   border-radius: 100rem;
+   align-items: center;
+   
+}
+
+#trash{
+    background-color: rgba(240, 255, 255, 0.404);
+    border: 0cm;
+}
+
+#trash2{
+    background-color: rgba(240, 255, 255, 0.404);
+    border: 0cm;
+}
+
+#trash3{
+    background-color: rgba(240, 255, 255, 0.404);
+    border: 0cm;
+}
+
+.fas {
+   font-size: 12px;
+}
