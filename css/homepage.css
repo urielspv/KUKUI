@@ -1,0 +1,299 @@
+/* Boton Cafe con Hover Bco*/
+
+.botoncafe {
+    font-size: larger;
+    background-color: rgb(64, 57, 57);
+    position: left;
+    border-color: rgb(64, 57, 57);
+    color: white;
+    position: top;
+    position: left;
+
+}
+
+/* Letras del Carrusel */
+.carouselH5 {
+    font-size: 3em;
+}
+
+.botoncafe:hover {
+    background-color: white;
+    color: rgb(64, 57, 57);
+    border-color: rgb(64, 57, 57);
+}
+
+/* Letras a Icono TIPOS DE CABELLO -- Responsiveness*/
+
+.card1 {
+    position: relative;
+}
+
+.card1 h5,
+.card1 p {
+    position: relative;
+}
+
+.card1 h5 span,
+.card1 p span {
+    background: none;
+}
+
+.card1 h5 span:before,
+.card1 p span:before {
+    content: attr(data-text);
+}
+
+@media only screen and (max-width: 990px) {
+
+    .card1 h5 span,
+    .card1 p span {
+        display: none;
+    }
+
+    .card1 .icon1 {
+        width: 150px;
+        height: 150px;
+        background-image: url('/img/IconosBlog/TipodeCabelloICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .card1 .icon1 {
+        width: 100px;
+        height: 100px;
+        background-image: url('/img/IconosBlog/TipodeCabelloICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 429px) {
+    .card1 .icon1 {
+        width: 70px;
+        height: 70px;
+        background-image: url('/img/IconosBlog/TipodeCabelloICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+    
+/* Letras a Icono SHAMPOOS SOLIDOS -- Responsiveness*/
+
+.card2 {
+    position: relative;
+}
+
+.card2 h5,
+.card2 p {
+    position: relative;
+}
+
+.card2 h5 span,
+.card2 p span {
+    background: none;
+}
+
+.card2 h5 span:before,
+.card2 p span:before {
+    content: attr(data-text);
+}
+
+@media only screen and (max-width: 990px) {
+
+    .card2 h5 span,
+    .card2 p span {
+        display: none;
+    }
+
+    .card2 .icon2 {
+        width: 150px;
+        height: 150px;
+        background-image: url('/img/IconosBlog/ShampooSolidoICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .card2 .icon2 {
+        width: 100px;
+        height: 100px;
+        background-image: url('/img/IconosBlog/ShampooSolidoICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 429px) {
+    .card2 .icon2 {
+        width: 70px;
+        height: 70px;
+        background-image: url('/img/IconosBlog/ShampooSolidoICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Letras a Icono ACONDICIONADORES SOLIDOS -- Responsiveness*/
+
+.card3 {
+    position: relative;
+}
+
+.card3 h5,
+.card3 p {
+    position: relative;
+}
+
+.card3 h5 span,
+.card3 p span {
+    background: none;
+}
+
+.card3 h5 span:before,
+.card3 p span:before {
+    content: attr(data-text);
+}
+
+@media only screen and (max-width: 990px) {
+
+    .card3 h5 span,
+    .card3 p span {
+        display: none;
+    }
+
+    .card3 .icon3 {
+        width: 150px;
+        height: 150px;
+        background-image: url('/img/IconosBlog/AcondicionadorSolidoICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .card3 .icon3 {
+        width: 100px;
+        height: 100px;
+        background-image: url('/img/IconosBlog/AcondicionadorSolidoICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 429px) {
+    .card3 .icon3 {
+        width: 70px;
+        height: 70px;
+        background-image: url('/img/IconosBlog/AcondicionadorSolidoICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Letras a Icono ACONDICIONADORES SOLIDOS -- Responsiveness*/
+
+.card4 {
+    position: relative;
+}
+
+.card4 h5,
+.card4 p {
+    position: relative;
+}
+
+.card4 h5 span,
+.card4 p span {
+    background: none;
+}
+
+.card4 h5 span:before,
+.card4 p span:before {
+    content: attr(data-text);
+}
+
+@media only screen and (max-width: 990px) {
+
+    .card4 h5 span,
+    .card4 p span {
+        display: none;
+    }
+
+    .card4 .icon4 {
+        width: 150px;
+        height: 150px;
+        background-image: url('/img/IconosBlog/MascotasICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .card4 .icon4 {
+        width: 100px;
+        height: 100px;
+        background-image: url('/img/IconosBlog/MascotasICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 429px) {
+    .card4 .icon4 {
+        width: 70px;
+        height: 70px;
+        background-image: url('/img/IconosBlog/MascotasICON.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
