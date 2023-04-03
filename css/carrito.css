@@ -1,4 +1,4 @@
-#botonmenos {
+#decrease-quantity1 {
 
     display: block;
     width: 40px;
@@ -9,7 +9,7 @@
 
 }
 
-#botonmas{
+#increase-quantity1{
     display: block;
     width: 40px;
     height: 40px;
@@ -20,7 +20,7 @@
 
 }
 
-#botonmenos2 {
+#decrease-quantity2 {
 
     display: block;
     width: 40px;
@@ -31,7 +31,29 @@
 
 }
 
-#botonmas2 {
+#increase-quantity2 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:  rgb(112, 168, 59);
+    border-style: hidden;
+
+
+}
+
+#decrease-quantity3 {
+
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgba(0, 0, 0, 0.363);
+    border-style: hidden;
+
+}
+
+#increase-quantity3{
     display: block;
     width: 40px;
     height: 40px;
