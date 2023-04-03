@@ -1,0 +1,32 @@
+.carrito-body__cantidad button{
+    /* Botones de agregar y quitar */
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    border:none; 
+  }  
+  .carrito-body__cantidad--añadir{
+    /* Icono de añadir */
+    color: #70A83B;
+    text-align: right;
+  }  
+  .carrito-body__cantidad--añadir:hover{
+    color: #619234;
+  }  
+  .carrito-body__cantidad--añadir:active{
+  color:darkgreen;  
+  }
+  /* ----------------------- */
+  .carrito-body__cantidad--restar{
+    /* Icono de quitar */
+    color: #B8B8B8;
+    text-align: left;
+  }  
+  .carrito-body__cantidad--restar:hover{
+    background-color: transparent;
+    color: #aa8484;
+  }  
+  .carrito-body__cantidad--restar:active{
+    color:darkred  
+  }
