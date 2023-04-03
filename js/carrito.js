@@ -1,3 +1,4 @@
+//funciones para actualizar el precio de productos por cantidad
 //botones1
 // get the quantity input and total price element
 const quantityInput1 = document.getElementById('quantity-input1');
@@ -24,6 +25,9 @@ function updateTotalPrice1() {
   const quantity = parseInt(quantityInput1.value);
   const totalPrice1 = initialPrice1 * quantity;
   totalPriceEl1.innerText = '$' + totalPrice1.toFixed(1);
+  console.log(`Total price 1: $${totalPrice1.toFixed(1)}`);
+  return totalPrice1;
+ 
 }
 
 
@@ -53,6 +57,9 @@ function updateTotalPrice2() {
   const quantity = parseInt(quantityInput2.value);
   const totalPrice2 = initialPrice2 * quantity;
   totalPriceEl2.innerText = '$' + totalPrice2.toFixed(1);
+ console.log(`Total price 2: $${totalPrice2.toFixed(1)}`);
+  return totalPrice2;
+ 
 }
 
 
@@ -70,46 +77,109 @@ let initialPrice = parseFloat(totalPriceEl.innerText.replace('$', ''));
 document.getElementById('decrease-quantity3').addEventListener('click', () => {
   if (quantityInput4.value > 0) {
     quantityInput4.value--;
-    updateTotalPrice();
+    const totalPrice = updateTotalPrice();
+    // use totalPrice variable for further calculations or display
   }
 });
 
 document.getElementById('increase-quantity3').addEventListener('click', () => {
   quantityInput4.value++;
-  updateTotalPrice();
+  const totalPrice = updateTotalPrice();
+  // use totalPrice variable for further calculations or display
 });
 
-// function to update the total price based on the quantity input
+// function to update the total price based on the quantity input and return the result
 function updateTotalPrice() {
   const quantity = parseInt(quantityInput4.value);
   const totalPrice = initialPrice * quantity;
   totalPriceEl.innerText = '$' + totalPrice.toFixed(1);
+  console.log(`Total price 3: $${totalPrice.toFixed(1)}`);
+  return totalPrice;
+ 
 }
 
+//funciones para calcular el total de productos
 
 
-// //
-// function updateProductosTotal() {
-//   const totalPrice2 = parseFloat(document.getElementById('total-price2').innerText.replace('$', ''));
-//   const totalPrice3 = parseFloat(document.getElementById('total-price').innerText.replace('$', ''));
-//   const totalPrice1 = parseFloat(document.getElementById('total-price1').innerText.replace('$', ''));
-//   const productosTotal = totalPrice2 + totalPrice3 + totalPrice1;
-//   document.getElementById('productos').innerText = '$' + productosTotal.toFixed(1);
-// }
+let totalPrice1 = 120;
+let totalPrice2 = 40;
+let totalPrice3 = 120;
 
-// function updateTotalPrice2() {
-//   // código para actualizar el precio total del producto 2
-//   updateProductosTotal();
-// }
+function updateProductosTotal() {
+  const productosTotal = totalPrice1 + totalPrice2 + totalPrice3;
+  document.getElementById('productos').innerText = '$' + productosTotal.toFixed(1);
+}
 
-// function updateTotalPrice() {
-//   // código para actualizar el precio total del producto 3
-//   updateProductosTotal();
-// }
-// function updateTotalPrice1() {
-//   // código para actualizar el precio total del producto 1
-//   updateProductosTotal();
-// }
+function updateTotalPrice2() {
+  const quantity = parseInt(document.getElementById('quantity-input2').value);
+  totalPrice2 = 40 * quantity;
+  document.getElementById('total-price2').innerText = '$' + totalPrice2.toFixed(1);
+  updateProductosTotal();
+}
+
+function updateTotalPrice() {
+  const quantity = parseInt(document.getElementById('quantity-input3').value);
+  totalPrice3 = 120 * quantity;
+  document.getElementById('total-price').innerText = '$' + totalPrice3.toFixed(1);
+  updateProductosTotal();
+}
+
+function updateTotalPrice1() {
+  const quantity = parseInt(document.getElementById('quantity-input1').value);
+  totalPrice1 = 120 * quantity;
+  document.getElementById('total-price1').innerText = '$' + totalPrice1.toFixed(1);
+  updateProductosTotal();
+}
+
+//
+
+//funcion para calcular el total a pagar
+
+function updateProductosTotal() {
+  const productosTotal = totalPrice1 + totalPrice2 + totalPrice3;
+  document.getElementById('productos').innerText = '$' + productosTotal.toFixed(1);
+}
+
+function updateTotalPrice2() {
+  const quantity = parseInt(document.getElementById('quantity-input2').value);
+  totalPrice2 = 40 * quantity;
+  document.getElementById('total-price2').innerText = '$' + totalPrice2.toFixed(1);
+  updateProductosTotal();
+  calculateTotal();
+}
+
+function updateTotalPrice() {
+  const quantity = parseInt(document.getElementById('quantity-input3').value);
+  totalPrice3 = 120 * quantity;
+  document.getElementById('total-price').innerText = '$' + totalPrice3.toFixed(1);
+  updateProductosTotal();
+  calculateTotal();
+}
+
+function updateTotalPrice1() {
+  const quantity = parseInt(document.getElementById('quantity-input1').value);
+  totalPrice1 = 120 * quantity;
+  document.getElementById('total-price1').innerText = '$' + totalPrice1.toFixed(1);
+  updateProductosTotal();
+  calculateTotal();
+}
+
+function calculateTotal() {
+  const totalSum = totalPrice1 + totalPrice2 + totalPrice3 + 130;
+  document.getElementById('aPgr').innerText = '$' + totalSum.toFixed(1);
+}
+
+//evento para el boton checkuot
+const botonCheckout = document.getElementById('botoncheckout');
+botonCheckout.addEventListener('click', () => {
+  window.location.href = '../pages/pago.html'; 
+});
+
+
+
+
+
+
 
 
 
