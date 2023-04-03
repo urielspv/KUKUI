@@ -49,7 +49,7 @@ function addToCart(product) {
     const carritoBody = document.getElementById('carrito__body');
     carritoBody.innerHTML += 
     `<tr>
-    <th scope="row"><img src="${product.img}" class="img-fluid" alt=""></th>
+    <th scope="row"><img src="${product.img}" class="img-fluid" style="min-width:100px ; min-height:100px ;" alt=""></th>
     <td>${product.name}</td>
     <td>$${product.price}</td>
     <td>1</td>
