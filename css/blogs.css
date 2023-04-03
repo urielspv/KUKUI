@@ -1,0 +1,23 @@
+/* Boton Verde con Hover Bco - OSCAR*/
+
+.botonverde {
+    font-size: larger;
+    background-color: #70A83B;
+    position: left;
+    border-color: #70A83B;
+    color: white;
+    position: top;
+    position: left;
+
+}
+
+.botonverde:hover {
+    background-color: white;
+    color: #70A83B;
+    border-color: #70A83B;
+}
+
+.textoder{
+    text-align: left;
+    text-align: justify;
+}
