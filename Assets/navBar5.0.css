@@ -1,96 +1,39 @@
-nav{
-}
-@media (min-width: 1190px) {
-    .navbar__cols{
-        margin-left: 50px !important;
-        margin-right: 50px !important;
+/* Codigo del logo en la NavBar */
+#navbar__logo{
+    margin:10px;
+    margin-right: 10px !important;
     }
-}
-.navbar__cols{
-    /* margin-left: 50px !important;
-    margin-right: 50px !important; */
-    display: flex;
-justify-content: center !important;
-}
-.navbar__logo{
-margin-right:0px ;
-}
-@media (min-width:1010px ) {
-    .navbar__logo{
-        margin-right:70px ;
-        }
-}
-.navbar__col1{
-display: block;
-justify-content: center;
-
-}
-.navbar__hamburguesa{
-    display: flex;
-    justify-content: center;
-    row-gap: 10px;
-
-}
-.navbar__col2{
-    display: block;
-    
-}
-@media (min-width: 1191px) {
-    .navbar__col2{
-        display: flex;
-        flex-direction: row-reverse;
+    @media (min-width:1080px ) {
+        #navbar__logo{
+            margin-left:50px !important;
+            margin-right: 70px !important;
+            }
     }
-}
-.navbar-brand {
-}
-.navbar__links {
-display: flex;
-justify-content: space-between;
-}
-
-@media (min-width:768px ) {
-    .navbar__links {
-        display: flex;
-        min-width: 800px;
-        width:fit-content ;
-        max-width:1000px;
-        justify-content: space-between;
-        }
-}
+/* Estilo de los links de la navBar */
 .navbar__links a{
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    color: #4A2E10;
-}
-.navbar__links a:hover{
-
-    color: #70A83B;
-}
-
-.navbar__links2 a{
     font-weight: 600;
     font-size: 24px;
     line-height: 28px;
     color: #4A2E10;
     margin-right: 0px;
 }
-.navbar__links2 a:hover{
+.navbar__links a:hover{
     color: #70A83B;
 }
-#carrito2{
+.active{
+    color: #858585 !important;
+    pointer-events: none;
+}
+.navbar__links--invisible{
     display: none;
 }
-#sesion2{
-    display: none;
-}
-.navbar__botones2{
+/* Codigo de los botones en la NavBar */
+.navbar__botones{
     background-color: white;
     column-gap: 10px;
     flex-direction:unset !important;
 }
-
-.navbar__botones2 a{
+.navbar__botones .a{
     color: gray;
     font-size: 24px;
     text-decoration: none;
@@ -100,25 +43,21 @@ justify-content: space-between;
     background: #F5F5F5;
     height: 72px;
 }
-.navbar__botones2 a:hover{
+.navbar__botones .a:hover{
     border-color:#70A83B;
 }
-
 @media (min-width: 990px) {
-    #carrito2{
+    .navbar__links--invisible{
         display:contents;
     }
-    #sesion2{
-        display: contents;
-    } 
-    .navbar__botones2 a{
+    .navbar__botones .a{
         color: #4A2E10;
         text-decoration: none;
         border:none;
         border-radius: 0%;
         background: white;
     }
-    .navbar__links2 a{
+    .navbar__links a{
         font-weight: 600;
         font-size: 24px;
         line-height: 28px;
@@ -127,52 +66,32 @@ justify-content: space-between;
     }
 }
 
-.navbar__logo2{
 
+/* Formulario dentro del boton de iniciar sesion */
+#navbar__login{
+    position: absolute;
+    width: 14rem;
+    right: auto;
 }
-.active{
-    color: #858585 !important;
-    pointer-events: none;
-}
-
-.navbar__botones{
-    display: flex;
-    justify-content: space-evenly;
-}
-.navbar__botones a{
-    color: gray;
-    font-size: 24px;
-    text-decoration: none;
-    border: 4px solid #858585;
-    border-radius: 100%;
-    padding: 20px;
-    background: #F5F5F5;
-}
-@media (min-width: 768px) {
-    .navbar__botones a{
-        color: gray;
-        font-size: 48px;
-        text-decoration: none;
-        border: 5px solid #858585;
-        border-radius: 100%;
-        padding: 20px;
-        background: #F5F5F5;
+@media (min-width: 355px) {
+    #navbar__login{
+        position: absolute;
+        width: 22rem;
+        right: 0;
     }
 }
-.navbar__botones a:hover{
-border-color: #70A83B;
+#navbar__login a{
+    font-size: 15px;
+    padding: 0;
 }
-#login{
-    margin-left:14px ;
+#navbar__login a:hover {
+    background-color: white;
+    
 }
-
-.hola{
-    display: block;
-    flex-direction: row-reverse;
+#navbar__login a:visited {
+    background-color: white !important;
+    
 }
-@media (min-width:990px ) {
-    .hola{
-        display: flex;
-        flex-direction: row-reverse;
-    }
+#carrito__contador{
+    background-color: #70A83B !important;
 }

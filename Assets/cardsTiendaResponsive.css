@@ -174,7 +174,7 @@ grid-template-columns: repeat(3, 1fr);
 grid-gap: 4px;
 /* width:234px; */
 }
-@media (min-width: 500px) {
+@media (min-width: 556px) {
     .card-producto__columnas--col1{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
