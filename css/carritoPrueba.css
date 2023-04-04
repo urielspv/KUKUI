@@ -30,3 +30,11 @@
   .carrito-body__cantidad--restar:active{
     color:darkred  
   }
+  .cart-items__delete:hover{
+    color: red !important;
+    cursor: pointer;
+  }
+  .cart-items__delete{
+    color: gray !important;
+    text-decoration: none;
+  }
