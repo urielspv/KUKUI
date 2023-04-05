@@ -182,8 +182,3 @@ botonCheckout.addEventListener('click', () => {
 
 
 
-
-
-
-
-

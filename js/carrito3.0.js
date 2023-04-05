@@ -32,7 +32,7 @@ cargarEventListeners();
 
 function cargarEventListeners() {
      // Dispara cuando se presiona "Agregar Carrito"
-    //  listaCursos.addEventListener('click', agregarCurso);
+     // listaCursos.addEventListener('click', agregarCurso);
     buyButtons.forEach(function(button) {
         button.addEventListener('click', agregarCurso)});
       
@@ -42,6 +42,12 @@ function cargarEventListeners() {
      // Al Vaciar el carrito
      vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
+     // NUEVO: Contenido cargado
+     document.addEventListener('DOMContentLoaded', () => {
+          articulosCarrito = JSON.parse( localStorage.getItem('carrito') ) || []  ;
+          // console.log(articulosCarrito);
+          carritoHTML();
+     });
 }
 
 // Funciones
@@ -69,6 +75,7 @@ function leerDatosCurso(curso) {
         break;
       }
     }
+
      const infoCurso = {
           imagen: curso.querySelector('img').src,
           titulo: curso.querySelector('h5').textContent,
@@ -79,6 +86,7 @@ function leerDatosCurso(curso) {
           cantidad: 1
      }
      console.log(infoCurso.id);
+
 
      if( articulosCarrito.some( curso => curso.id === infoCurso.id ) ) { 
           const cursos = articulosCarrito.map( curso => {
@@ -94,16 +102,16 @@ function leerDatosCurso(curso) {
           articulosCarrito = [...articulosCarrito, infoCurso];
      }
 
-     // console.log(articulosCarrito)
-
-     
-
-     // console.log(articulosCarrito)
      carritoHTML();
 }
 
 // Elimina el curso del carrito en el DOM
 function eliminarCurso(e) {
+
+
+     let carritoContador = document.getElementById('carrito__contador');
+     carritoContador.textContent --;
+
      e.preventDefault();
      if(e.target.classList.contains('borrar-curso') ) {
           // e.target.parentElement.parentElement.remove();
@@ -139,13 +147,19 @@ function carritoHTML() {
           contenedorCarrito.appendChild(li);
      });
 
+     // NUEVO:
+     sincronizarStorage();
+
 }
+
+
+// NUEVO: 
+function sincronizarStorage() {
+     localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
+}
+
 // Elimina los cursos del carrito en el DOM
 function vaciarCarrito() {
-     // forma lenta
-     // contenedorCarrito.innerHTML = '';
-
-
      // forma rapida (recomendada)
      while(contenedorCarrito.firstChild) {
           contenedorCarrito.removeChild(contenedorCarrito.firstChild);
