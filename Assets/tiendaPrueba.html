@@ -111,6 +111,7 @@
         </div>
       </div>
     </nav>
+    
 <!-- Aqui empieza el carrito -->
 <div class="offcanvas offcanvas-end show" data-bs-scroll="false" tabindex="-1" id="navCarrito"
   aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -140,7 +141,22 @@
 
   <div class="container-xl mt-2 d-flex" id="lista-cursos">
     <div class="row row-cols-1 row-cols-md-3 g-4" id="div_Productos">
+      <div class="col">
+        <div class="card rounded-5" id="tienda__card${p.idProducto}">
+            <img src="../img/FotosTienda/${p.src_imagen}" class="rounded-5 card-img-top card-tienda__img"
+                alt="...">
+            <div class="card-body bottomcard rounded-top rounded-5">
+                <h5 class="letrablanca ">${p.nombre}</h5>
+                <h6 class="card-subtitle mb-2 letrablanca">${p.categoria}</h6>
 
+                <span class="d-flex precie">$<p class="card-text precio">${p.precio}</p></span>
+                <a class="btn botoncarrite buy-btn agregar-carrito" data-id="${p.idProducto}">
+                    <span class="material-symbols-outlined">shopping_cart </span> Añadir al carrito
+                  </a>
+                  
+            </div>
+        </div>
+    </div>
     </div>
   </div>
 

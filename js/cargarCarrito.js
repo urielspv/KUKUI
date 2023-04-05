@@ -1,29 +1,32 @@
 const header = document.querySelector('header');
-console.log(header);
-header.innerHTML+=``
 header.innerHTML+=`
-<!-- Aqui empieza el carrito -->
-<div class="offcanvas offcanvas-end" data-bs-scroll="false" tabindex="-1" id="navCarrito"
-  aria-labelledby="offcanvasWithBothOptionsLabel">
-  <div class="offcanvas-header">
-    <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel" style=" font-weight: 600;">Carrito<span
-        class="material-symbols-outlined" style="font-size: 48px; font-weight: 600">shopping_cart</span></h1>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <a href="../pages/pedido.html" class="btn btn-success">Ir a Pedido</a>
-  <div class="offcanvas-body" id="carrito">
-    
-    <h5 class="title">Tus productos:</h5> 
+<div class="offcanvas offcanvas-end show" data-bs-scroll="false" tabindex="-1" id="navCarrito"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title offcanvas1" id="offcanvasWithBothOptionsLabel" style=" font-weight: 600;">Carrito<span
+            class="material-symbols-outlined material1" style="font-size: 48px; font-weight: 600">shopping_cart</span></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div class="contenedor-boton">
+      <a href="../pages/pedido.html" class="btn botonpedido">Continuar a Pedido<span
+          class="material-symbols-outlined iconovaciar">
+          arrow_forward</span></a>
+      <br>
+      <div class="offcanvas-body" id="carrito">
 
-   <ol id="lista-carrito" class="list-group list-group">
+        <h5 class="title letracafe">Tus productos:</h5>
 
-    </ol>
-    <div>
-      <a href="" id="vaciar-carrito" class="btn btn-danger">Vaciar carrito</a>
+        <ol id="lista-carrito" class="list-group list-group">
+
+        </ol>
+        <br>
+        <div>
+          <a href="" id="vaciar-carrito" class="btn botonvaciar">Vaciar carrito<span
+              class="material-symbols-outlined iconovaciar">
+              delete</span></a>
+        </div>
+
+      </div>
     </div>
-
-  </div>
-</div>
 `
 
 
@@ -54,6 +57,14 @@ function cargarEventListeners() {
      // NUEVO: Contenido cargado
      document.addEventListener('DOMContentLoaded', () => {
           articulosCarrito = JSON.parse( localStorage.getItem('carrito') ) || []  ;
+          
+          let cantidadTotal = 0;
+          articulosCarrito.forEach(function(item) {
+            cantidadTotal += item.cantidad;
+          });
+          console.log("cantidad total es:",cantidadTotal);
+          let carritoContador = document.getElementById('carrito__contador');
+          carritoContador.textContent = cantidadTotal;
           // console.log(articulosCarrito);
           carritoHTML();
      });
@@ -63,11 +74,11 @@ function cargarEventListeners() {
 // Función que añade el curso al carrito
 function agregarCurso(e) {
      e.preventDefault();
-     let carritoContador = document.getElementById('carrito__contador');
-     carritoContador.textContent ++;
+
      // Delegation para agregar-carrito
      if(e.target.classList.contains('agregar-carrito')) {
           const curso = e.target.closest('.card');
+          
           // Enviamos el curso seleccionado para tomar sus datos
           leerDatosCurso(curso);
      }
@@ -106,7 +117,8 @@ function leerDatosCurso(curso) {
 
 // Elimina el curso del carrito en el DOM
 function eliminarCurso(e) {
-
+     let carritoContador = document.getElementById('carrito__contador');
+     carritoContador.textContent --;
      e.preventDefault();
      if(e.target.classList.contains('borrar-curso') ) {
           // e.target.parentElement.parentElement.remove();
@@ -130,7 +142,7 @@ function carritoHTML() {
           li.setAttribute('class','list-group-item'); 
           li.innerHTML =
           `<div class="fw-bold d-flex justify-content-between">
-                   <p class="p-0 m-0">${curso.tipo} ${curso.titulo}</p>
+                   <p class="p-0 m-0">${curso.titulo}</p>
                    <a href="#" class="borrar-curso material-symbols-outlined cart-items__delete" data-id="${curso.id}">delete</a>
                    </div>
                  <div class="ms-2 me-auto d-flex align-items-center justify-content-between">
