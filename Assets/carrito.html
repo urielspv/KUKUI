@@ -14,83 +14,28 @@
     </head>
 <body>
     
-
-
-
-
-    <!-- Aqui empieza el carrito -->
-    <div class="offcanvas offcanvas-end show" data-bs-scroll="false" tabindex="-1" id="offcanvasWithBothOptions"
-    aria-labelledby="offcanvasWithBothOptionsLabel">
-    <div class="offcanvas-header">
-      <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel" style=" font-weight: 600;">Carrito<span
-          class="material-symbols-outlined" style="font-size: 48px; font-weight: 600">shopping_cart</span></h1>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <h5 class="title">Tus productos:</h5>
-
-      <ol class="list-group list-group">
-        <li class="list-group-item ">
-          <div class="fw-bold d-flex justify-content-between">
-            <p class="p-0 m-0">Shampoo Aguacate 40gr</p>
-             <a href="$">X</a>
-            </div>
-          <div class="ms-2 me-auto d-flex align-items-center justify-content-between">
-            <img src="../img/FotosTienda/AguacateTiendaBC.png" alt="" style="width: 100px; height: 100px;">
-              <h5>$120</h5> 
-                <input type="number" min="0" max="50" style="width: 50px;">
-          </div>
-        </li>
-      </ol>
-
-
-      <!-- <table class="table align-middle">
-        <thead>
-          <tr>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody id="carrito__body">
-          
-          <tr>
-            <th scope="row"><img src="../img/FotosTienda/AguacateTiendaBC.png" class="img-fluid" style="min-width:100px ; min-height:100px ;" alt=""></th>
-            <td>Aguacate</td>
-            <td>40gr</td>
-            <td>$120</td>
-            <td>1</td>
-          </tr>
-          <tr >
-            <td rowspan="2"><img src="../img/FotosTienda/AguacateTiendaBC.png" class="img-fluid" style="min-width:100px ; min-height:100px ;" alt=""></td>
-            <td colspan="2">Aguacate</td>
-            <td>40gr</td>
-            </tr>
-            <tr>
-            <td >
-              <div class="d-flex carrito-body__cantidad">
+<!-- Aqui empieza el carrito -->
+<div class="offcanvas offcanvas-end show" data-bs-scroll="false" tabindex="-1" id="navCarrito"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel" style=" font-weight: 600;">Carrito<span
+        class="material-symbols-outlined" style="font-size: 48px; font-weight: 600">shopping_cart</span></h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <a href="../pages/carrito.html" class="btn btn-success">Ir a Pedido</a>
+  <div class="offcanvas-body" id="carrito">
     
-                <button class="material-symbols-outlined carrito-body__cantidad--restar">
-                remove_circle
-              </button>
-              <input type="number" style="width: 50px;">
-              <button class="material-symbols-outlined carrito-body__cantidad--añadir">
-                add_circle
-              </button>
-              </div>
-            </td>
-            <td>$120</td>
-            <td>
-            <a href="#">quitar</a>
-            </td>
-            </tr>
-    
-        </tbody>
-      </table> -->
+    <h5 class="title">Tus productos:</h5> 
 
+   <ol id="lista-carrito" class="list-group list-group">
+
+    </ol>
+    <div>
+      <a href="" id="vaciar-carrito" class="btn btn-danger">Vaciar carrito</a>
     </div>
-    </div>
+
+  </div>
+</div>
     <!-- --------------------------->
 
         <!-- SCRIPTS -->
