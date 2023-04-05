@@ -38,3 +38,48 @@
     color: gray !important;
     text-decoration: none;
   }
+
+  .precie {
+    margin: 10px;
+    font-weight: bold;
+    color: #eaceb0;
+    font-size: large;
+    border-width: 3px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.botoncarrite {
+    background-color: #70A83B;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.botoncarrite .material-symbols-outlined {
+    margin-right: 10px;
+}
+
+.botoncarrite:hover {
+    background-color: #ffffff;
+    color: #4A2E10;
+}
+
+.agregar-carrito {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.bottomcard{
+    background-color: #4A2E10;
+    border-radius: 10px;
+}
+
+.letrablanca{
+    color: white;
+}
