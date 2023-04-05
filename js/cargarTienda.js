@@ -20,7 +20,7 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
                       <div class="card rounded-5" id="tienda__card${p.idProducto}">
                           <img src="../img/FotosTienda/${p.src_imagen}" class="rounded-5 card-img-top card-tienda__img"
                               alt="...">
-                          <div class="card-body bottomcard">
+                          <div class="card-body bottomcard rounded-top rounded-5">
                               <h5 class="letrablanca ">${p.nombre}</h5>
                               <h6 class="card-subtitle mb-2 letrablanca">${p.categoria}</h6>
       

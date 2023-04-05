@@ -1,26 +1,35 @@
-// cambia el precio en base al boton
-const tamaño40 = document.querySelectorAll('.tamaño40');
-// console.log(tamaño40);
-const tamaño80 = document.querySelectorAll('.tamaño80');
-// console.log(tamaño80);
+const header = document.querySelector('header');
+console.log(header);
+header.innerHTML+=``
+header.innerHTML+=`
+<!-- Aqui empieza el carrito -->
+<div class="offcanvas offcanvas-end" data-bs-scroll="false" tabindex="-1" id="navCarrito"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel" style=" font-weight: 600;">Carrito<span
+        class="material-symbols-outlined" style="font-size: 48px; font-weight: 600">shopping_cart</span></h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <a href="../pages/pedido.html" class="btn btn-success">Ir a Pedido</a>
+  <div class="offcanvas-body" id="carrito">
+    
+    <h5 class="title">Tus productos:</h5> 
 
-tamaño40.forEach(function(button) {
-  button.addEventListener('click', function(event) {
-      const precio = event.target.closest('.card').querySelector('.precio');
-      precio.textContent = 60;
-  });
-});
-tamaño80.forEach(function(button) {
-  button.addEventListener('click', function(event) {
-      const precio = event.target.closest('.card').querySelector('.precio');
-      precio.textContent = 120;
-  });
-});
+   <ol id="lista-carrito" class="list-group list-group">
+
+    </ol>
+    <div>
+      <a href="" id="vaciar-carrito" class="btn btn-danger">Vaciar carrito</a>
+    </div>
+
+  </div>
+</div>
+`
 
 
 // Variables
 const carrito = document.querySelector('#carrito');
-// const listaCursos = document.querySelector('#lista-cursos');
+const listaCursos = document.querySelector('#lista-cursos');
 const contenedorCarrito = document.querySelector('#lista-carrito');
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito'); 
 let articulosCarrito = [];
@@ -32,9 +41,9 @@ cargarEventListeners();
 
 function cargarEventListeners() {
      // Dispara cuando se presiona "Agregar Carrito"
-    //  listaCursos.addEventListener('click', agregarCurso);
-    buyButtons.forEach(function(button) {
-        button.addEventListener('click', agregarCurso)});
+     listaCursos.addEventListener('click', agregarCurso);
+//     buyButtons.forEach(function(button) {
+//         button.addEventListener('click', agregarCurso)});
       
      // Cuando se elimina un curso del carrito
      carrito.addEventListener('click', eliminarCurso);
@@ -42,6 +51,12 @@ function cargarEventListeners() {
      // Al Vaciar el carrito
      vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
+     // NUEVO: Contenido cargado
+     document.addEventListener('DOMContentLoaded', () => {
+          articulosCarrito = JSON.parse( localStorage.getItem('carrito') ) || []  ;
+          // console.log(articulosCarrito);
+          carritoHTML();
+     });
 }
 
 // Funciones
@@ -60,25 +75,17 @@ function agregarCurso(e) {
 
 // Lee los datos del curso
 function leerDatosCurso(curso) {
-    const radioName = curso.querySelector('input').getAttribute('name');
-    const radios = document.getElementsByName(radioName);
-    let size;
-    for (let i = 0; i < radios.length; i++) {
-      if (radios[i].checked) {
-        size = radios[i].value;
-        break;
-      }
-    }
+
      const infoCurso = {
           imagen: curso.querySelector('img').src,
           titulo: curso.querySelector('h5').textContent,
           tipo: curso.querySelector('h6').textContent,
           precio: curso.querySelector('.precio').textContent,
-          tamaño: size,
-          id: `${curso.querySelector('a').getAttribute('data-id')}-${size}`, 
+          id: curso.querySelector('a').getAttribute('data-id'), 
           cantidad: 1
      }
      console.log(infoCurso.id);
+
 
      if( articulosCarrito.some( curso => curso.id === infoCurso.id ) ) { 
           const cursos = articulosCarrito.map( curso => {
@@ -94,16 +101,12 @@ function leerDatosCurso(curso) {
           articulosCarrito = [...articulosCarrito, infoCurso];
      }
 
-     // console.log(articulosCarrito)
-
-     
-
-     // console.log(articulosCarrito)
      carritoHTML();
 }
 
 // Elimina el curso del carrito en el DOM
 function eliminarCurso(e) {
+
      e.preventDefault();
      if(e.target.classList.contains('borrar-curso') ) {
           // e.target.parentElement.parentElement.remove();
@@ -127,7 +130,7 @@ function carritoHTML() {
           li.setAttribute('class','list-group-item'); 
           li.innerHTML =
           `<div class="fw-bold d-flex justify-content-between">
-                   <p class="p-0 m-0">${curso.tipo} ${curso.titulo} ${curso.tamaño}</p>
+                   <p class="p-0 m-0">${curso.tipo} ${curso.titulo}</p>
                    <a href="#" class="borrar-curso material-symbols-outlined cart-items__delete" data-id="${curso.id}">delete</a>
                    </div>
                  <div class="ms-2 me-auto d-flex align-items-center justify-content-between">
@@ -135,19 +138,31 @@ function carritoHTML() {
                      <h5>$${curso.precio}</h5> 
                      <h5 class="quantity">${curso.cantidad}</h5>
                  </div>`;
-
           contenedorCarrito.appendChild(li);
      });
 
+     // NUEVO:
+     sincronizarStorage();
+
 }
+
+
+// NUEVO: 
+function sincronizarStorage() {
+     localStorage.setItem('carrito', JSON.stringify(articulosCarrito));
+}
+
 // Elimina los cursos del carrito en el DOM
 function vaciarCarrito() {
-     // forma lenta
-     // contenedorCarrito.innerHTML = '';
-
-
      // forma rapida (recomendada)
+     localStorage.clear();
      while(contenedorCarrito.firstChild) {
           contenedorCarrito.removeChild(contenedorCarrito.firstChild);
       }
+     
+}
+
+
+function contarCarrito(){
+     
 }
