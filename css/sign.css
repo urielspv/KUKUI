@@ -1,58 +1,61 @@
 /* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; 
-  } */
-  .bigdiv{
-    min-height: 100vh;
-    width: 100%;
-    background-image: url("../img/FotosContenidoExtra/IMG_9990.jpg");
-    background-size: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .containersign{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    max-width: 430px;
-    width: 100%;
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-  }
-  .containersign .registration{
-    display: none;
-  }
-  #check:checked ~ .registration{
-    display: block;
-  }
-  #check:checked ~ .login{
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-  .containersign .formsign{
-    padding: 2rem;
-  }
-  .formsign header{
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-   .formsign input{
-     height: 60px;
-     width: 100%;
-     padding: 0 15px;
-     font-size: 17px;
-     margin-bottom: 1.3rem;
-     border: 1px solid #ddd;
-     border-radius: 6px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; 
+} */
+.bigdiv{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../img/FotosContenidoExtra/IMG_9990.jpg");
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.containersign{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.containersign .registration{
+  display: block;
+}
+.containersign .login{
+  display: none;
+}
+#check:checked ~ .registration{
+  display: none;
+}
+#check:checked ~ .login{
+  display: block;
+}
+#check{
+  display: none;
+}
+.containersign .formsign{
+  padding: 2rem;
+}
+.formsign header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.formsign input{
+  height: 60px;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 17px;
+  margin-bottom: 1.3rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
      outline: none;
    }
    .formsign input:focus{
@@ -90,3 +93,101 @@
   .signup label:hover{
     text-decoration: underline;
   }
+  /*nav bar*/
+  /* Codigo del logo en la NavBar */
+#navbar__logo{
+  margin:10px;
+  margin-right: 10px !important;
+  }
+  @media (min-width:1080px ) {
+      #navbar__logo{
+          margin-left:50px !important;
+          margin-right: 70px !important;
+          }
+  }
+/* Estilo de los links de la navBar */
+.navbar__links a{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4A2E10;
+  margin-right: 0px;
+}
+.navbar__links a:hover{
+  color: #70A83B;
+}
+.active{
+  color: #858585 !important;
+  pointer-events: none;
+}
+.navbar__links--invisible{
+  display: none;
+}
+/* Codigo de los botones en la NavBar */
+.navbar__botones{
+  background-color: white;
+  column-gap: 10px;
+  flex-direction:unset !important;
+}
+.navbar__botones .a{
+  color: gray;
+  font-size: 24px;
+  text-decoration: none;
+  border: 4px solid #858585;
+  border-radius: 100%;
+  padding: 20px;
+  background: #F5F5F5;
+  height: 72px;
+}
+.navbar__botones .a:hover{
+  border-color:#70A83B;
+}
+@media (min-width: 990px) {
+  .navbar__links--invisible{
+      display:contents;
+  }
+  .navbar__botones .a{
+      color: #4A2E10;
+      text-decoration: none;
+      border:none;
+      border-radius: 0%;
+      background: white;
+  }
+  .navbar__links a{
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      color: #4A2E10;
+      margin-right: 30px;
+  }
+}
+
+
+/* Formulario dentro del boton de iniciar sesion */
+#navbar__login{
+  position: absolute;
+  width: 14rem;
+  right: auto;
+}
+@media (min-width: 355px) {
+  #navbar__login{
+      position: absolute;
+      width: 22rem;
+      right: 0;
+  }
+}
+#navbar__login a{
+  font-size: 15px;
+  padding: 0;
+}
+#navbar__login a:hover {
+  background-color: white;
+  
+}
+#navbar__login a:visited {
+  background-color: white !important;
+  
+}
+#carrito__contador{
+  background-color: #70A83B !important;
+}

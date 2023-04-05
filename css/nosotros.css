@@ -72,3 +72,30 @@ border: 10px;
 }
 
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+
+.collapse {
+    &:not(.show) {
+      display: none;
+    }
+  }
+  
+  .collapsing {
+    height: 0;
+    overflow: hidden;
+    @include transition($transition-collapse);
+  
+    &.collapse-horizontal {
+      width: 0;
+      height: auto;
+      @include transition($transition-collapse-width);
+    }
+  }

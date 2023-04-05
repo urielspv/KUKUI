@@ -83,59 +83,7 @@
 }
 
 
-  /* css Nav Bar */
-/* .nav-item {
-  border-radius: 100px;
-  border-color: #ffffff;
-  color: #4A2E10;
-  background-color: #ffffff;
-}
 
-.nav-item:hover {
-  background-color: white;
-  color: white;
-}
-.nav-link:hover {
-  background-color: white;
-  color: white;
-}
-.nav-item {
-  border-radius: 100px;
-  background-color: #ffffff;
-}
-
-#buttonIngresar {
-  background-color: #ffffff;
-  color: #4A2E10;
-  padding: 10px 20px;
-  border-radius: 100px;
-  margin: 5px;
-  transition: background-color 0.3s ease;
-}
-
-#buttonIngresar{
-  background-color: #4A2E10;
-  color: #ffffff;
-}
-#buttonIngresar:Hover{
-  background-color: #FFFFFF;
-  color: #ffffff;
-}
-#buttonCuenta {
-  background-color: #eaeaea;
-  color: #4A2E10;
-  padding: 10px 20px;
-  border-radius: 100px;
-  margin: 5px;
-  transition: background-color 0.3s ease;
-} */
-
-
-.card-hover:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transform: translateY(-10px);
-  transition: all 0.5s ease;
-}
 
 /* Boton Cafe con Hover Bco*/
 

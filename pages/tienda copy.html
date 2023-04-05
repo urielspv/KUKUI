@@ -58,8 +58,8 @@
           <ul class="navbar-nav ml-auto navbar__links navbar__botones ">
             <li class="nav-item">
               <!-- Boton Carrito -->
-              <a class="nav-link a position-relative" data-bs-toggle="offcanvas" href="#carrito"
-                role="button" aria-controls="carrito">
+              <a class="nav-link a position-relative" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions"
+                role="button" aria-controls="offcanvasWithBothOptions">
                 <span class="navbar__links--invisible"> Carrito </span><span
                   class="material-symbols-outlined">shopping_cart </span>
                 </span>
@@ -113,7 +113,7 @@
     </nav>
 
     <!-- Aqui empieza el carrito -->
-    <div class="offcanvas offcanvas-end show" data-bs-scroll="false" tabindex="-1" id="carrito"
+    <div class="offcanvas offcanvas-end show" data-bs-scroll="false" tabindex="-1" id="offcanvasWithBothOptions"
       aria-labelledby="offcanvasWithBothOptionsLabel">
       <div class="offcanvas-header">
         <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel" style=" font-weight: 600;">Carrito<span
@@ -123,7 +123,7 @@
       <div class="offcanvas-body">
         <h5 class="title">Tus productos:</h5>
 
-        <ol id="lista-carrito" class="list-group list-group">
+        <ol id="cart-items" class="list-group list-group">
 
           <li class="list-group-item ">
             <div class="fw-bold d-flex justify-content-between">
@@ -140,9 +140,7 @@
           </li>
 
         </ol>
-        <div>
-          <a href="" id="vaciar-carrito" class="btn btn-danger">Vaciar carrito</a>
-        </div>
+
 
 
 
@@ -154,10 +152,9 @@
 
 
 
-  <div class="container-xl mt-2 d-flex" id="lista-cursos">
+  <div class="container-xl mt-2 d-flex">
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
-
         <div class="card" id="tienda__card1">
           <img src="../img/FotosTienda/AguacateTiendaBC.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -172,8 +169,8 @@
               autocomplete="off">
             <label class="btn btn-secondary " for="card1__80gr">80gr</label>
 
-            <span class="d-flex">$<p class="card-text precio">60</p></span>
-            <a class="btn btn-primary buy-btn agregar-carrito" data-id="1">Añadir al carrito</a>
+            <span class="d-flex">$<p id="precio" class="card-text">60</p></span>
+            <a class="btn btn-primary buy-btn">Comprar</a>
           </div>
         </div>
       </div>
@@ -188,13 +185,12 @@
             <input type="radio" class="btn-check tamaño40" value="40gr" name="card2-tamaño" id="card2__40gr"
               autocomplete="off" checked>
             <label class="btn btn-secondary " for="card2__40gr">40gr</label>
-            
             <input type="radio" class="btn-check tamaño80" value="80gr" name="card2-tamaño" id="card2__80gr"
               autocomplete="off">
             <label class="btn btn-secondary " for="card2__80gr">80gr</label>
 
-            <span class="d-flex">$<p class="card-text precio">60</p></span>
-            <a class="btn btn-primary buy-btn agregar-carrito" data-id="2">Añadir al carrito</a>
+            <span class="d-flex">$<p id="precio" class="card-text">60</p></span>
+            <a class="btn btn-primary buy-btn">Go somewhere</a>
           </div>
         </div>
       </div>
