@@ -15,8 +15,8 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
             console.log(json.length); //imprime el tamaño del json
             productos = json; //se guarda el json en la variable productos
             Array.from(json).forEach((p, index) => { //Toma el JSON, si es un arreglo haces el forEach. Si no lo es, mandas el error.
-                div_Productos.innerHTML += 
-              `<div class="col">
+                div_Productos.innerHTML +=
+                    `<div class="col">
                       <div class="card rounded-5" id="tienda__card${p.idProducto}">
                           <img src="../img/FotosTienda/${p.src_imagen}" class="rounded-5 card-img-top card-tienda__img"
                               alt="...">
