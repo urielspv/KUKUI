@@ -1,7 +1,8 @@
 const header = document.querySelector('header');
-console.log(header);
-header.innerHTML += ``
-header.innerHTML += `
+
+
+header.innerHTML+=`
+
 <!-- Aqui empieza el carrito -->
 <div class="offcanvas offcanvas-end" data-bs-scroll="false" tabindex="-1" id="navCarrito"
   aria-labelledby="offcanvasWithBothOptionsLabel">
