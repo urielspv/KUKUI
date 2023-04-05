@@ -72,19 +72,19 @@
   </header>
   <!-- ******************FIN DEL NAV BAR************** -->
 
-  <!-- SIGN UP & SIGN IN-->
+ <!-- SIGN UP & SIGN IN-->
 <div class="bigdiv">
   <div class="containersign">
     <input type="checkbox" id="check">
     <div class="registration formsign" id="registration-section">
       <header>Registrarme</header>
-      <form action="#">
-        <input type="text" placeholder="Ingresa tu nombre" required>
-        <input type="text" placeholder="Ingresa tu apellido" required>
-        <input type="text" placeholder="Ingresa tu email" required>
-        <input type="password" placeholder="Crea una contraseña" required>
-        <input type="password" placeholder="Confirma tu contraseña" required>
-        <input type="button" class="buttonsign" value="Registrarme">
+      <form id="registro-form">
+        <input type="text" placeholder="Ingresa tu nombre" id="nombre" required>
+        <input type="text" placeholder="Ingresa tu apellido" id="apellido" required>
+        <input type="email" placeholder="Ingresa tu email" id="email" required>
+        <input type="password" placeholder="Crea una contraseña" id="contrasenia" required>
+        <input type="password" placeholder="Confirma tu contraseña" id="conf-contrasenia" required>
+        <input type="submit" class="buttonsign" value="Registrarme">
       </form>
       <div class="signup">
         <span class="signup">¿Ya tienes una cuenta?
@@ -92,13 +92,13 @@
         </span>
       </div>
     </div>
-    <div class="login formsign">
+    <div class="login formsign" id="login-section">
       <header>Iniciar sesión</header>
-      <form action="#">
-        <input type="text" placeholder="Ingresa tu email" required>
-        <input type="password" placeholder="Ingresa tu contraseña" required>
+      <form id="login-form">
+        <input type="email" placeholder="Ingresa tu email" id="email-login" required>
+        <input type="password" placeholder="Ingresa tu contraseña" id="contrasenia-login" required>
         <a href="#">¿Olvidaste tu contraseña?</a>
-        <input type="button" class="buttonsign" value="Iniciar sesión">
+        <input type="submit" class="buttonsign" value="Iniciar sesión">
       </form>
       <div class="signup">
         <span class="signup">¿No tienes una cuenta?
@@ -172,6 +172,9 @@
 
 
   <!--FIN DEL FOOTER-->
+
+  <!-- JS de registros-->
+  <script src="../js/registro.js"></script>
 </body>
 
 </html>
