@@ -1,3 +1,5 @@
+Pagina desplegada en Git Pages:  https://urielspv.github.io/KUKUI/
+
 Integrantes de equipo:
 
 -Uriel Salem Pérez Vásquez
